@@ -14,15 +14,16 @@ namespace AirlineData.Classes
             // Replace with your actual connection string
             return "Server=.\\PROJELER; Database=Airline; User Id=sa; Password=sql2026dev; TrustServerCertificate=true;";
         }
+        static SqlConnection connection = new SqlConnection(GetConnectionString());
         public static int GetDatabaseProps()
         {
             int totalTables = 0;
             try
-            { 
-                using (SqlConnection connection = new SqlConnection())
+            {
+                using (connection)
                 {
                     connection.Open();
-                    string query = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE_TABLE'"; // Veriabanındaki tabloların ismini liste olarak verir
+                    string query = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'"; // Veriabanındaki tabloların ismini liste olarak verir
                     SqlCommand cmd = new SqlCommand(query, connection);
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
@@ -39,6 +40,42 @@ namespace AirlineData.Classes
                 MessageBox.Show(ex.Message);
             }
             return 0;
+        }
+
+        public static void SqlInsertData(string query)
+        {
+            try
+            {
+                using (connection)
+                {
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand(query, connection);
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public static void SqlInsertMultiData(string query, List<object> datas)
+        {
+            try
+            {
+                using (connection)
+                {
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

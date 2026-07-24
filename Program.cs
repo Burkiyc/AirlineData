@@ -1,3 +1,5 @@
+using static AirlineData.Classes.Functions;
+
 namespace AirlineData
 {
     internal static class Program
@@ -10,7 +12,9 @@ namespace AirlineData
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+
             ApplicationConfiguration.Initialize();
+            GetDatabaseProps();
             Application.Run(new Form1());
         }
     }

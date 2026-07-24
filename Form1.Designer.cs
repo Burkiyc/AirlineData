@@ -30,6 +30,7 @@
         {
             dataTableA = new DataGridView();
             panel1 = new Panel();
+            FiloYonetimiBtn = new Button();
             button1 = new Button();
             tableSelCbx = new ComboBox();
             label1 = new Label();
@@ -39,23 +40,37 @@
             // 
             // dataTableA
             // 
+            dataTableA.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataTableA.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataTableA.Location = new Point(12, 41);
             dataTableA.Name = "dataTableA";
-            dataTableA.Size = new Size(972, 557);
+            dataTableA.Size = new Size(965, 557);
             dataTableA.TabIndex = 0;
             // 
             // panel1
             // 
+            panel1.Controls.Add(FiloYonetimiBtn);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(990, 12);
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(983, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(125, 656);
+            panel1.Size = new Size(144, 680);
             panel1.TabIndex = 1;
+            // 
+            // FiloYonetimiBtn
+            // 
+            FiloYonetimiBtn.Location = new Point(13, 12);
+            FiloYonetimiBtn.Name = "FiloYonetimiBtn";
+            FiloYonetimiBtn.Size = new Size(119, 33);
+            FiloYonetimiBtn.TabIndex = 1;
+            FiloYonetimiBtn.Text = "Filo Yönetimi";
+            FiloYonetimiBtn.UseVisualStyleBackColor = true;
+            FiloYonetimiBtn.Click += HvyoluYonetmiBtn_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(3, 620);
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button1.Location = new Point(13, 635);
             button1.Name = "button1";
             button1.Size = new Size(119, 33);
             button1.TabIndex = 0;
@@ -65,10 +80,12 @@
             // tableSelCbx
             // 
             tableSelCbx.FormattingEnabled = true;
+            tableSelCbx.ItemHeight = 15;
             tableSelCbx.Location = new Point(66, 12);
             tableSelCbx.Name = "tableSelCbx";
             tableSelCbx.Size = new Size(202, 23);
             tableSelCbx.TabIndex = 2;
+            tableSelCbx.SelectedIndexChanged += tableSelCbx_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -105,5 +122,6 @@
         private Button button1;
         private ComboBox tableSelCbx;
         private Label label1;
+        private Button FiloYonetimiBtn;
     }
 }
