@@ -18,7 +18,7 @@ namespace AirlineData.Classes
         {
             int totalTables = 0;
             try
-            {
+            { 
                 using (SqlConnection connection = new SqlConnection())
                 {
                     connection.Open();
