@@ -1,6 +1,8 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Drawing.Imaging;
 using System.Text;
 
 namespace AirlineData.Classes
@@ -33,6 +35,7 @@ namespace AirlineData.Classes
                         }
                     }
                     totalTables = baseTableNames.Count;
+                    connection.Close();
                 }
             }
             catch (ArgumentException ex)
@@ -42,6 +45,26 @@ namespace AirlineData.Classes
             return 0;
         }
 
+        public static DataTable SqlPullData(string query)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(GetConnectionString()))
+                {
+                    conn.Open();
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                    adapter.Fill(dt);
+                    conn.Close();
+                    return dt;
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+        }
         public static void SqlInsertData(string query)
         {
             try
@@ -50,7 +73,7 @@ namespace AirlineData.Classes
                 {
                     connection.Open();
                     SqlCommand cmd = new SqlCommand(query, connection);
-
+                    //foreach ()
                     cmd.ExecuteNonQuery();
                     connection.Close();
                 }
@@ -60,14 +83,14 @@ namespace AirlineData.Classes
                 MessageBox.Show(ex.Message);
             }
         }
-        public static void SqlInsertMultiData(string query, List<object> datas)
+        public static void SqlInsertMultiData(string query, SqlCommand cmd)
         {
             try
             {
                 using (connection)
                 {
                     connection.Open();
-                    SqlCommand cmd = new SqlCommand(query, connection);
+                    //SqlCommand cmd = new SqlCommand(query, connection);
                     cmd.ExecuteNonQuery();
                     connection.Close();
                 }

@@ -31,32 +31,38 @@
             ucakDataGrid = new DataGridView();
             addDataBtn = new Button();
             tabControl1 = new TabControl();
-            PersYonetmTab = new TabPage();
-            filoYonetimTab = new TabPage();
-            ucakEkleBtn = new Button();
-            dataGridView1 = new DataGridView();
+            filoYonetmTab = new TabPage();
+            refreshBtn = new Button();
             panel1 = new Panel();
+            ucakEkleControl1 = new AirlineData.Forms.ucakEkleControl();
+            persYonetmTab = new TabPage();
+            refreshBtn2 = new Button();
+            dataGridView1 = new DataGridView();
+            panel2 = new Panel();
+            ucakEkleControl2 = new AirlineData.Forms.ucakEkleControl();
             ((System.ComponentModel.ISupportInitialize)ucakDataGrid).BeginInit();
             tabControl1.SuspendLayout();
-            PersYonetmTab.SuspendLayout();
-            filoYonetimTab.SuspendLayout();
+            filoYonetmTab.SuspendLayout();
+            panel1.SuspendLayout();
+            persYonetmTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // ucakDataGrid
             // 
             ucakDataGrid.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             ucakDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ucakDataGrid.Location = new Point(8, 130);
+            ucakDataGrid.Location = new Point(6, 132);
             ucakDataGrid.Name = "ucakDataGrid";
-            ucakDataGrid.Size = new Size(831, 489);
+            ucakDataGrid.Size = new Size(833, 489);
             ucakDataGrid.TabIndex = 0;
             // 
             // addDataBtn
             // 
-            addDataBtn.Location = new Point(8, 93);
+            addDataBtn.Location = new Point(158, 586);
             addDataBtn.Name = "addDataBtn";
-            addDataBtn.Size = new Size(87, 31);
+            addDataBtn.Size = new Size(87, 26);
             addDataBtn.TabIndex = 1;
             addDataBtn.Text = "Ekle";
             addDataBtn.UseVisualStyleBackColor = true;
@@ -64,8 +70,8 @@
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(PersYonetmTab);
-            tabControl1.Controls.Add(filoYonetimTab);
+            tabControl1.Controls.Add(filoYonetmTab);
+            tabControl1.Controls.Add(persYonetmTab);
             tabControl1.Dock = DockStyle.Fill;
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
@@ -73,56 +79,93 @@
             tabControl1.Size = new Size(1107, 655);
             tabControl1.TabIndex = 2;
             // 
-            // PersYonetmTab
+            // filoYonetmTab
             // 
-            PersYonetmTab.Controls.Add(panel1);
-            PersYonetmTab.Controls.Add(ucakDataGrid);
-            PersYonetmTab.Controls.Add(addDataBtn);
-            PersYonetmTab.Location = new Point(4, 24);
-            PersYonetmTab.Name = "PersYonetmTab";
-            PersYonetmTab.Padding = new Padding(3);
-            PersYonetmTab.Size = new Size(1099, 627);
-            PersYonetmTab.TabIndex = 0;
-            PersYonetmTab.Text = "Personel Yönetimi";
-            PersYonetmTab.UseVisualStyleBackColor = true;
+            filoYonetmTab.Controls.Add(refreshBtn);
+            filoYonetmTab.Controls.Add(panel1);
+            filoYonetmTab.Controls.Add(ucakDataGrid);
+            filoYonetmTab.Location = new Point(4, 24);
+            filoYonetmTab.Name = "filoYonetmTab";
+            filoYonetmTab.Padding = new Padding(3);
+            filoYonetmTab.Size = new Size(1099, 627);
+            filoYonetmTab.TabIndex = 0;
+            filoYonetmTab.Text = "Filo Yönetimi";
+            filoYonetmTab.UseVisualStyleBackColor = true;
+            filoYonetmTab.Click += filoYonetmTab_Click;
             // 
-            // filoYonetimTab
+            // refreshBtn
             // 
-            filoYonetimTab.Controls.Add(ucakEkleBtn);
-            filoYonetimTab.Controls.Add(dataGridView1);
-            filoYonetimTab.Location = new Point(4, 24);
-            filoYonetimTab.Name = "filoYonetimTab";
-            filoYonetimTab.Padding = new Padding(3);
-            filoYonetimTab.Size = new Size(1031, 609);
-            filoYonetimTab.TabIndex = 1;
-            filoYonetimTab.Text = "Filo Yönetimi";
-            filoYonetimTab.UseVisualStyleBackColor = true;
+            refreshBtn.Location = new Point(711, 100);
+            refreshBtn.Name = "refreshBtn";
+            refreshBtn.Size = new Size(128, 26);
+            refreshBtn.TabIndex = 3;
+            refreshBtn.Text = "Yenile/Tekrar Yükle";
+            refreshBtn.UseVisualStyleBackColor = true;
+            refreshBtn.Click += refreshBtn_Click;
             // 
-            // ucakEkleBtn
+            // panel1
             // 
-            ucakEkleBtn.Location = new Point(8, 54);
-            ucakEkleBtn.Name = "ucakEkleBtn";
-            ucakEkleBtn.Size = new Size(88, 31);
-            ucakEkleBtn.TabIndex = 2;
-            ucakEkleBtn.Text = "Uçak Ekle";
-            ucakEkleBtn.UseVisualStyleBackColor = true;
-            ucakEkleBtn.Click += ucakEkleBtn_Click;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            panel1.Controls.Add(ucakEkleControl1);
+            panel1.Controls.Add(addDataBtn);
+            panel1.Location = new Point(845, 6);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(248, 615);
+            panel1.TabIndex = 2;
+            // 
+            // ucakEkleControl1
+            // 
+            ucakEkleControl1.Location = new Point(0, 0);
+            ucakEkleControl1.Name = "ucakEkleControl1";
+            ucakEkleControl1.Size = new Size(248, 361);
+            ucakEkleControl1.TabIndex = 0;
+            // 
+            // persYonetmTab
+            // 
+            persYonetmTab.Controls.Add(refreshBtn2);
+            persYonetmTab.Controls.Add(dataGridView1);
+            persYonetmTab.Controls.Add(panel2);
+            persYonetmTab.Location = new Point(4, 24);
+            persYonetmTab.Name = "persYonetmTab";
+            persYonetmTab.Padding = new Padding(3);
+            persYonetmTab.Size = new Size(1099, 627);
+            persYonetmTab.TabIndex = 1;
+            persYonetmTab.Text = "Personel Yönetimi";
+            persYonetmTab.UseVisualStyleBackColor = true;
+            // 
+            // refreshBtn2
+            // 
+            refreshBtn2.Location = new Point(711, 100);
+            refreshBtn2.Name = "refreshBtn2";
+            refreshBtn2.Size = new Size(128, 26);
+            refreshBtn2.TabIndex = 5;
+            refreshBtn2.Text = "Yenile/Tekrar Yükle";
+            refreshBtn2.UseVisualStyleBackColor = true;
+            refreshBtn2.Click += refreshBtn_Click;
             // 
             // dataGridView1
             // 
             dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(8, 91);
+            dataGridView1.Location = new Point(6, 132);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1015, 510);
-            dataGridView1.TabIndex = 1;
+            dataGridView1.Size = new Size(833, 489);
+            dataGridView1.TabIndex = 4;
             // 
-            // panel1
+            // panel2
             // 
-            panel1.Location = new Point(845, 6);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(248, 615);
-            panel1.TabIndex = 2;
+            panel2.Controls.Add(ucakEkleControl2);
+            panel2.Location = new Point(845, 6);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(248, 615);
+            panel2.TabIndex = 3;
+            // 
+            // ucakEkleControl2
+            // 
+            ucakEkleControl2.Location = new Point(0, 0);
+            ucakEkleControl2.Name = "ucakEkleControl2";
+            ucakEkleControl2.Size = new Size(228, 275);
+            ucakEkleControl2.TabIndex = 0;
             // 
             // YonetimForm
             // 
@@ -137,9 +180,11 @@
             Load += YonetimForm_Load;
             ((System.ComponentModel.ISupportInitialize)ucakDataGrid).EndInit();
             tabControl1.ResumeLayout(false);
-            PersYonetmTab.ResumeLayout(false);
-            filoYonetimTab.ResumeLayout(false);
+            filoYonetmTab.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            persYonetmTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -148,10 +193,14 @@
         private DataGridView ucakDataGrid;
         private Button addDataBtn;
         private TabControl tabControl1;
-        private TabPage filoYonetimTab;
-        private DataGridView dataGridView1;
-        private TabPage PersYonetmTab;
-        private Button ucakEkleBtn;
+        private TabPage persYonetmTab;
+        private TabPage filoYonetmTab;
         private Panel panel1;
+        private Forms.ucakEkleControl ucakEkleControl1;
+        private Button refreshBtn;
+        private Panel panel2;
+        private DataGridView dataGridView1;
+        private Button refreshBtn2;
+        private Forms.ucakEkleControl ucakEkleControl2;
     }
 }

@@ -30,10 +30,12 @@
         {
             dataTableA = new DataGridView();
             panel1 = new Panel();
-            FiloYonetimiBtn = new Button();
+            bakimKayitBtn = new Button();
+            KayitYonetimiBtn = new Button();
             button1 = new Button();
             tableSelCbx = new ComboBox();
             label1 = new Label();
+            quickInfoLbl = new Label();
             ((System.ComponentModel.ISupportInitialize)dataTableA).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -44,33 +46,44 @@
             dataTableA.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataTableA.Location = new Point(12, 41);
             dataTableA.Name = "dataTableA";
-            dataTableA.Size = new Size(965, 557);
+            dataTableA.Size = new Size(1251, 724);
             dataTableA.TabIndex = 0;
             // 
             // panel1
             // 
-            panel1.Controls.Add(FiloYonetimiBtn);
+            panel1.Controls.Add(bakimKayitBtn);
+            panel1.Controls.Add(KayitYonetimiBtn);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(983, 0);
+            panel1.Location = new Point(1269, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(144, 680);
+            panel1.Size = new Size(144, 847);
             panel1.TabIndex = 1;
             // 
-            // FiloYonetimiBtn
+            // bakimKayitBtn
             // 
-            FiloYonetimiBtn.Location = new Point(13, 12);
-            FiloYonetimiBtn.Name = "FiloYonetimiBtn";
-            FiloYonetimiBtn.Size = new Size(119, 33);
-            FiloYonetimiBtn.TabIndex = 1;
-            FiloYonetimiBtn.Text = "Filo Yönetimi";
-            FiloYonetimiBtn.UseVisualStyleBackColor = true;
-            FiloYonetimiBtn.Click += HvyoluYonetmiBtn_Click;
+            bakimKayitBtn.Location = new Point(13, 51);
+            bakimKayitBtn.Name = "bakimKayitBtn";
+            bakimKayitBtn.Size = new Size(119, 33);
+            bakimKayitBtn.TabIndex = 2;
+            bakimKayitBtn.Text = "Bakım Kayıtları";
+            bakimKayitBtn.UseVisualStyleBackColor = true;
+            bakimKayitBtn.Click += bakimKayitBtn_Click;
+            // 
+            // KayitYonetimiBtn
+            // 
+            KayitYonetimiBtn.Location = new Point(13, 12);
+            KayitYonetimiBtn.Name = "KayitYonetimiBtn";
+            KayitYonetimiBtn.Size = new Size(119, 33);
+            KayitYonetimiBtn.TabIndex = 1;
+            KayitYonetimiBtn.Text = "Kayıt Yönetimi";
+            KayitYonetimiBtn.UseVisualStyleBackColor = true;
+            KayitYonetimiBtn.Click += KayitYonetmiBtn_Click;
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button1.Location = new Point(13, 635);
+            button1.Location = new Point(13, 802);
             button1.Name = "button1";
             button1.Size = new Size(119, 33);
             button1.TabIndex = 0;
@@ -96,17 +109,29 @@
             label1.TabIndex = 3;
             label1.Text = "Kaynak:";
             // 
+            // quickInfoLbl
+            // 
+            quickInfoLbl.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            quickInfoLbl.AutoSize = true;
+            quickInfoLbl.Location = new Point(12, 823);
+            quickInfoLbl.Name = "quickInfoLbl";
+            quickInfoLbl.Size = new Size(38, 15);
+            quickInfoLbl.TabIndex = 4;
+            quickInfoLbl.Text = "label2";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1127, 680);
+            ClientSize = new Size(1413, 847);
+            Controls.Add(quickInfoLbl);
             Controls.Add(label1);
             Controls.Add(tableSelCbx);
             Controls.Add(panel1);
             Controls.Add(dataTableA);
             Name = "Form1";
             ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataTableA).EndInit();
@@ -122,6 +147,8 @@
         private Button button1;
         private ComboBox tableSelCbx;
         private Label label1;
-        private Button FiloYonetimiBtn;
+        private Button KayitYonetimiBtn;
+        private Label quickInfoLbl;
+        private Button bakimKayitBtn;
     }
 }

@@ -1,5 +1,6 @@
 using System.Data;
 using System.Data.SqlClient;
+using AirlineData.Forms;
 using Microsoft.Data.SqlClient;
 using static AirlineData.Classes.Functions;
 
@@ -64,10 +65,31 @@ namespace AirlineData
 
         }
 
-        private void HvyoluYonetmiBtn_Click(object sender, EventArgs e)
+        private void KayitYonetmiBtn_Click(object sender, EventArgs e)
         {
             YonetimForm filoForm = new YonetimForm();
             filoForm.Show();
+            KayitYonetimiBtn.Enabled = false;
+            filoForm.Disposed += OnKayitFormClose;
+        }
+        
+        void OnKayitFormClose(object sender, EventArgs e)
+        {
+            KayitYonetimiBtn.Enabled = true;
+        }
+
+        void OnBakimKFormClose(object sender, EventArgs e)
+        {
+            bakimKayitBtn.Enabled = true;
+        }
+
+        private void bakimKayitBtn_Click(object sender, EventArgs e)
+        {
+            BakimKayitForm bakimKayitForm = new BakimKayitForm();
+            bakimKayitForm.Show();
+            bakimKayitBtn.Enabled = false;
+
+            bakimKayitForm.Disposed += OnBakimKFormClose;
         }
     }
 }
