@@ -38,19 +38,22 @@
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(488, 374);
+            dataGridView1.Size = new Size(553, 418);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellDoubleClick += dataGridView1_CellDoubleClick;
             // 
-            // QuickDataViewForm1
+            // QuickDataViewForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(488, 374);
+            ClientSize = new Size(553, 418);
             Controls.Add(dataGridView1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Name = "QuickDataViewForm1";
+            Name = "QuickDataViewForm";
             ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "QuickDataViewForm1";
+            Load += QuickDataViewForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

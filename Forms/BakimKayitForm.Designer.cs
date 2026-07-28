@@ -32,6 +32,10 @@
             refreshBtn2 = new Button();
             bakimDataGrid = new DataGridView();
             panel2 = new Panel();
+            uygulamaYeriCbx = new ComboBox();
+            textBox3 = new TextBox();
+            bakimOlustrBtn = new Button();
+            dateTimePicker1 = new DateTimePicker();
             qprsSelBtn = new Button();
             textBox2 = new TextBox();
             generateBtn = new Button();
@@ -39,8 +43,8 @@
             quickInfoLbl = new Label();
             bakimContextMenu = new ContextMenuStrip(components);
             tumKayilar = new ToolStripMenuItem();
-            dateTimePicker1 = new DateTimePicker();
-            button1 = new Button();
+            buUçağınTümKayıtlarıToolStripMenuItem = new ToolStripMenuItem();
+            currentTableLbl = new Label();
             ((System.ComponentModel.ISupportInitialize)bakimDataGrid).BeginInit();
             panel2.SuspendLayout();
             bakimContextMenu.SuspendLayout();
@@ -64,11 +68,14 @@
             bakimDataGrid.Size = new Size(850, 489);
             bakimDataGrid.TabIndex = 7;
             bakimDataGrid.CellMouseClick += bakimDataGrid_CellMouseClick;
+            bakimDataGrid.CellMouseDown += bakimDataGrid_CellMouseDown;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FloralWhite;
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(uygulamaYeriCbx);
+            panel2.Controls.Add(textBox3);
+            panel2.Controls.Add(bakimOlustrBtn);
             panel2.Controls.Add(dateTimePicker1);
             panel2.Controls.Add(qprsSelBtn);
             panel2.Controls.Add(textBox2);
@@ -79,6 +86,40 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(235, 657);
             panel2.TabIndex = 6;
+            // 
+            // uygulamaYeriCbx
+            // 
+            uygulamaYeriCbx.FormattingEnabled = true;
+            uygulamaYeriCbx.Location = new Point(11, 99);
+            uygulamaYeriCbx.Name = "uygulamaYeriCbx";
+            uygulamaYeriCbx.Size = new Size(99, 23);
+            uygulamaYeriCbx.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(11, 128);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(212, 81);
+            textBox3.TabIndex = 6;
+            // 
+            // bakimOlustrBtn
+            // 
+            bakimOlustrBtn.Location = new Point(120, 215);
+            bakimOlustrBtn.Name = "bakimOlustrBtn";
+            bakimOlustrBtn.Size = new Size(103, 27);
+            bakimOlustrBtn.TabIndex = 5;
+            bakimOlustrBtn.Text = "Bakım Oluştur";
+            bakimOlustrBtn.UseVisualStyleBackColor = true;
+            bakimOlustrBtn.Click += bakimOlustrBtn_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(11, 70);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(99, 23);
+            dateTimePicker1.TabIndex = 4;
             // 
             // qprsSelBtn
             // 
@@ -109,6 +150,7 @@
             // 
             // textBox1
             // 
+            textBox1.CharacterCasing = CharacterCasing.Upper;
             textBox1.Location = new Point(11, 12);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(212, 23);
@@ -126,9 +168,9 @@
             // 
             // bakimContextMenu
             // 
-            bakimContextMenu.Items.AddRange(new ToolStripItem[] { tumKayilar });
+            bakimContextMenu.Items.AddRange(new ToolStripItem[] { tumKayilar, buUçağınTümKayıtlarıToolStripMenuItem });
             bakimContextMenu.Name = "bakimContextMenu";
-            bakimContextMenu.Size = new Size(199, 26);
+            bakimContextMenu.Size = new Size(199, 48);
             // 
             // tumKayilar
             // 
@@ -137,28 +179,29 @@
             tumKayilar.Text = "Tüm kayıtları görüntüle";
             tumKayilar.Click += tumKayilar_Click;
             // 
-            // dateTimePicker1
+            // buUçağınTümKayıtlarıToolStripMenuItem
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(11, 70);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(99, 23);
-            dateTimePicker1.TabIndex = 4;
+            buUçağınTümKayıtlarıToolStripMenuItem.Name = "buUçağınTümKayıtlarıToolStripMenuItem";
+            buUçağınTümKayıtlarıToolStripMenuItem.Size = new Size(198, 22);
+            buUçağınTümKayıtlarıToolStripMenuItem.Text = "Bu uçağın tüm kayıtları";
+            buUçağınTümKayıtlarıToolStripMenuItem.Click += buUçağınTümKayıtlarıToolStripMenuItem_Click;
             // 
-            // button1
+            // currentTableLbl
             // 
-            button1.Location = new Point(148, 183);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 5;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            currentTableLbl.AutoSize = true;
+            currentTableLbl.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            currentTableLbl.Location = new Point(12, 107);
+            currentTableLbl.Name = "currentTableLbl";
+            currentTableLbl.Size = new Size(92, 19);
+            currentTableLbl.TabIndex = 10;
+            currentTableLbl.Text = "Tüm kayıtlar";
             // 
             // BakimKayitForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1103, 657);
+            Controls.Add(currentTableLbl);
             Controls.Add(quickInfoLbl);
             Controls.Add(refreshBtn2);
             Controls.Add(bakimDataGrid);
@@ -189,7 +232,11 @@
         private Label quickInfoLbl;
         private ContextMenuStrip bakimContextMenu;
         private ToolStripMenuItem tumKayilar;
-        private Button button1;
+        private Button bakimOlustrBtn;
         private DateTimePicker dateTimePicker1;
+        private ToolStripMenuItem buUçağınTümKayıtlarıToolStripMenuItem;
+        private TextBox textBox3;
+        private Label currentTableLbl;
+        private ComboBox uygulamaYeriCbx;
     }
 }

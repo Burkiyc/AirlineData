@@ -1,7 +1,9 @@
-﻿using System;
+﻿using AirlineData.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Metrics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -15,31 +17,46 @@ namespace AirlineData.Forms
         {
             InitializeComponent();
         }
-        public QuickDataViewForm(string tableName)
-        {
-            dataGridView1 = new DataGridView();
-            if (tableName == "Ucaklar")
-            {
 
-                dataGridView1.DataSource = SqlPullData("SELECT * FROM Ucaklar");
-            }
-            else if (tableName == "Personel")
+        public QuickDataViewForm(string tableName, string[]? columns = null) : this()
+        {
+            string kolonlar = columns == null ? "*" : string.Join(",", columns);
+
+            dataGridView1.DataSource = SqlPullData($"SELECT {kolonlar} FROM {tableName}");
+        }
+
+        static object? selectedItem;
+        public static object SelectedItem()
+        {
+            if (selectedItem != null)
             {
-                dataGridView1.DataSource = SqlPullData("SELECT * FROM Personel");
+                return selectedItem;
+            }
+            else
+            {
+                MessageBox.Show("selectedItem null döndü.");
+                return null;
             }
         }
-        public QuickDataViewForm(string tableName, string[] columns)
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView1 = new DataGridView();
-            if (tableName == "Ucaklar")
+            if (e.RowIndex >= 0)
             {
+                DataGridViewRow rowCollection = dataGridView1.Rows[e.RowIndex];
+                Personel personel = new Personel();
+                personel.Id = (int)rowCollection.Cells[0].Value!;
+                personel.AdSoyad = (string)rowCollection.Cells["AdSoyad"].Value!;
+                personel.IseGirisTarihi = Convert.ToDateTime(rowCollection.Cells["Ise_GirisTarihi"].Value!);
+                if (rowCollection.Cells["AtananMeydan"].Value != DBNull.Value)
+                    personel.AtananMeydan = (string)(rowCollection.Cells["AtananMeydan"].Value!);
+                selectedItem = personel;
+                this.Close();
+            }
+        }
 
-                dataGridView1.DataSource = SqlPullData($"SELECT {string.Join("", columns)} FROM Ucaklar");
-            }
-            else if (tableName == "Personel")
-            {
-                dataGridView1.DataSource = SqlPullData($"SELECT {string.Join("", columns)} FROM Personel");
-            }
+        private void QuickDataViewForm_Load(object sender, EventArgs e)
+        {
+            dataGridView1.Show();
         }
     }
 }

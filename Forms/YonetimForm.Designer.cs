@@ -39,7 +39,8 @@
             refreshBtn2 = new Button();
             dataGridView1 = new DataGridView();
             panel2 = new Panel();
-            ucakEkleControl2 = new AirlineData.Forms.ucakEkleControl();
+            prsEkleBtn = new Button();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)ucakDataGrid).BeginInit();
             tabControl1.SuspendLayout();
             filoYonetmTab.SuspendLayout();
@@ -154,18 +155,28 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(ucakEkleControl2);
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(prsEkleBtn);
             panel2.Location = new Point(845, 6);
             panel2.Name = "panel2";
             panel2.Size = new Size(248, 615);
             panel2.TabIndex = 3;
             // 
-            // ucakEkleControl2
+            // prsEkleBtn
             // 
-            ucakEkleControl2.Location = new Point(0, 0);
-            ucakEkleControl2.Name = "ucakEkleControl2";
-            ucakEkleControl2.Size = new Size(228, 275);
-            ucakEkleControl2.TabIndex = 0;
+            prsEkleBtn.Location = new Point(170, 230);
+            prsEkleBtn.Name = "prsEkleBtn";
+            prsEkleBtn.Size = new Size(75, 23);
+            prsEkleBtn.TabIndex = 0;
+            prsEkleBtn.Text = "Ekle";
+            prsEkleBtn.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(3, 3);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(152, 23);
+            textBox1.TabIndex = 1;
             // 
             // YonetimForm
             // 
@@ -185,6 +196,7 @@
             persYonetmTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -201,6 +213,7 @@
         private Panel panel2;
         private DataGridView dataGridView1;
         private Button refreshBtn2;
-        private Forms.ucakEkleControl ucakEkleControl2;
+        private TextBox textBox1;
+        private Button prsEkleBtn;
     }
 }

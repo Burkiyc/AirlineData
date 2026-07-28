@@ -69,18 +69,42 @@ namespace AirlineData.Classes
         {
             try
             {
-                using (connection)
+                using (SqlConnection conn = new SqlConnection(GetConnectionString()))
                 {
-                    connection.Open();
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    //foreach ()
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
+                    using (conn)
+                    {
+                        conn.Open();
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        //foreach ()
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
+                    }
                 }
             }
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        public static int SqlInsertScalar(string query)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(GetConnectionString()))
+                {
+                    using (conn)
+                    {
+                        conn.Open();
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        //foreach ()
+                        return (int)cmd.ExecuteScalar();
+                        conn.Close();
+                    }
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message); return 0;
             }
         }
         public static void SqlInsertMultiData(string query, SqlCommand cmd)
