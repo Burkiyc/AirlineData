@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 using static AirlineData.Classes.Functions;
@@ -35,8 +36,12 @@ namespace AirlineData
                     SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
-                    ucakDataGrid.DataSource = dataTable;
-                    connection.Close();
+                    if (tableName == "Ucaklar")
+                        ucakDataGrid.DataSource = dataTable;
+                    else if (tableName == "Personel")
+                        persDataGrid.DataSource = dataTable;
+                    else
+                        return false;
                 }
                 return true;
             }
@@ -67,6 +72,7 @@ namespace AirlineData
                 MessageBox.Show($"Hata oluştu: {ex.Message}");
                 return false;
             }
+
         }
 
         private void addDataBtn_Click(object sender, EventArgs e)
@@ -151,7 +157,12 @@ namespace AirlineData
             {
                 SqlPullTable("Ucaklar");
             }
-
+            else if (tabControl1.SelectedIndex == 1)
+            {
+                SqlPullTable("Personel");
+            }
+            atMeydancbx.DataSource = SqlPullData("SELECT ICAO FROM HavaMeydanlari");
+            atMeydancbx.DisplayMember = "ICAO";
         }
 
         private void ucakEkleBtn_Click(object sender, EventArgs e)
@@ -171,6 +182,59 @@ namespace AirlineData
 
         }
 
+        [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        private static extern Int32 SendMessage(IntPtr hWnd, int msg, int wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
 
+        private const int EM_SETCUEBANNER = 0x1501;
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex == 0)
+            {
+                SqlPullTable("Ucaklar");
+            }
+            else if (tabControl1.SelectedIndex == 1)
+            {
+                SqlPullTable("Personel");
+                SendMessage(persAdtbx.Handle, EM_SETCUEBANNER, 1, "Ad Soyad...");
+                SendMessage(uzmanlikTbx.Handle, EM_SETCUEBANNER, 1, "Uzmanlık Alanı...");
+                SendMessage(uzmanlikTbx.Handle, EM_SETCUEBANNER, 1, "Uzmanlık Alanı...");
+            }
+        }
+
+        private void prsEkleBtn_Click(object sender, EventArgs e)
+        {
+            string name = persAdtbx.Text;
+            string uzmanlik = uzmanlikTbx.Text;
+            string meydan = atMeydancbx.Text;
+            int result = SqlInsertScalar($"INSERT INTO Personel (AdSoyad, UzmanlikAlani, Ise_GirisTarihi, AtananMeydan)" +
+                $"VALUES ('{name}', '{uzmanlik}', GETUTCDATE(), '{meydan}'); SELECT 1;");
+            if (result == 1)
+            {
+                qinfLbl2.Text = "Başarıyla Kaydedildi";
+            }
+        }
+
+        int rowIndex = -1;
+        private void ucakDataGrid_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.Button == MouseButtons.Right)
+            {
+                foreach (var item in persDataGrid.Rows)
+                {
+                    (item as DataGridViewRow).Selected = false;
+
+                }
+                persDataGrid.Rows[e.RowIndex].Selected = true;
+                rowIndex = e.RowIndex;
+
+                yontimCtxMenu.Show(Cursor.Position);
+            }
+        }
+
+        private void kaydıSilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int ID = (int)persDataGrid.Rows[rowIndex].Cells["PersonelID"].Value!;
+            int result = SqlInsertScalar($"DELETE FROM Personel WHERE id = {ID};");
+        }
     }
 }

@@ -10,6 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using static AirlineData.Classes.Functions;
 using static AirlineData.Program;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace AirlineData.Forms
 {
@@ -29,7 +30,7 @@ namespace AirlineData.Forms
             dateTimePicker1.CustomFormat = "dd/MM/yyyy";
             SendMessage(textBox1.Handle, EM_SETCUEBANNER, 1, "Kuyruk No...");
             SendMessage(textBox2.Handle, EM_SETCUEBANNER, 1, "Personel Numarası...");
-            bakimDataGrid.DataSource = SqlPullData("SELECT\r\nB.BakimId,\r\nU.UcakID,\r\nU.KuyrukNo,\r\nU.Model,\r\nP.AdSoyad AS Koordinator,\r\nB.BakimTarihi,\r\nB.YapilanIslem,\r\nB.Sonuc\r\nFROM Bakim_Kayitlari B\r\nINNER JOIN Ucaklar U ON B.UcakID = U.UcakID\r\nINNER JOIN Personel P ON P.PersonelID = B.PersonelID\r\nORDER BY B.BakimTarihi DESC;");
+            bakimDataGrid.DataSource = SqlPullData("SELECT\r\nB.BakimId,\r\nU.KuyrukNo,\r\nU.Model,\r\nP.AdSoyad AS Koordinator,\r\nB.BakimTarihi,\r\nB.YapilanIslem,\r\nB.Sonuc\r\nFROM Bakim_Kayitlari B\r\nINNER JOIN Ucaklar U ON B.UcakID = U.UcakID\r\nINNER JOIN Personel P ON P.PersonelID = B.PersonelID\r\nORDER BY B.BakimTarihi DESC;");
             bakimDataGrid.Columns[0].Visible = false;
             bakimDataGrid.BackgroundColor = Color.FromArgb(64, 64, 64);
             uygulamaYeriCbx.DataSource = SqlPullData("SELECT ICAO, MeydanKodu FROM HavaMeydanlari");
@@ -39,7 +40,12 @@ namespace AirlineData.Forms
         //Bakım Kayıtlarını Yenile
         private void refreshBtn2_Click(object sender, EventArgs e)
         {
-            bakimDataGrid.DataSource = SqlPullData("SELECT\r\nB.BakimId,\r\nU.UcakID,\r\nU.KuyrukNo,\r\nU.Model,\r\nP.AdSoyad AS Koordinator,\r\nB.BakimTarihi,\r\nB.YapilanIslem,\r\nB.Sonuc\r\nFROM Bakim_Kayitlari B\r\nINNER JOIN Ucaklar U ON B.UcakID = U.UcakID\r\nINNER JOIN Personel P ON P.PersonelID = B.PersonelID\r\nORDER BY B.BakimTarihi DESC;");
+            BakimDataGridRefresh();
+        }
+
+        private void BakimDataGridRefresh()
+        {
+            bakimDataGrid.DataSource = SqlPullData("SELECT B.BakimId, U.UcakID, U.KuyrukNo, U.Model, P.AdSoyad AS Koordinator, B.BakimTarihi, B.YapilanIslem, B.Sonuc FROM Bakim_Kayitlari B INNER JOIN Ucaklar U ON B.UcakID = U.UcakID INNER JOIN Personel P ON P.PersonelID = B.PersonelID ORDER BY B.BakimTarihi DESC;");
             bakimDataGrid.Columns[0].Visible = false;
             bakimDataGrid.BackgroundColor = Color.FromArgb(64, 64, 64);
             currentTableLbl.Text = "Tüm kayıtlar";
@@ -47,16 +53,9 @@ namespace AirlineData.Forms
 
         private void generateBtn_Click(object sender, EventArgs e)
         {
-            SqlInsertData("INSERT INTO Bakim_Kayitlari ");
-            bakimDataGrid.DataSource = SqlPullData("SELECT * FROM Bakim_Kayitlari");
-            bakimDataGrid.Columns[0].Visible = false;
+            this.Close();
         }
 
-
-        private void tumKayilar_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void bakimDataGrid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -115,17 +114,32 @@ namespace AirlineData.Forms
             DateTime dateTime = dateTimePicker1.Value.ToUniversalTime();
             int personeID = personel.Id;
             string yapilanIslem = textBox3.Text;
-            string query = $"insert into Bakim_Kayitlari (ucakID, PersonelID, BakimTarihi,\r\nYapilanIslem, UygulamaYeri)\r\n" +
-                $"select ucakID, '{personeID}', '{dateTime}', '{yapilanIslem}', '{uygulamaYeriCbx.ValueMember}'\r\nfrom Ucaklar where KuyrukNo='{kuyrukNo}' returning ucakID;";
-            int result = SqlInsertScalar(query);
-            if (result != 0)
+
+            //  SqlDataExists($"SELECT COUNT(*) FROM Bakim_Kayitlari WHERE UcakID = (SELECT UcakID FROM Ucaklar WHERE KuyrukNo = '{kuyrukNo}');")
+            if (!SqlDataExists($"SELECT COUNT(1) FROM Ucaklar WHERE KuyrukNo='{kuyrukNo}';"))
             {
-                MessageBox.Show("Kayıt başarıyla oluşturuldu."); ;
+                MessageBox.Show($"Filoda {kuyrukNo} kuyruk numaralı bir uçak yok.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
             }
-            else
-            {
-                quickInfoLbl.Text = "Kayıt oluşturulamadı.";
-            }
+
+            string query = $"INSERT INTO Bakim_Kayitlari(ucakID, PersonelID, BakimTarihi,\r\nYapilanIslem, UygulamaYeri)" +
+                $"VALUES(" +
+                $"(SELECT UcakID FROM Ucaklar WHERE KuyrukNo = '{kuyrukNo}'), '{personeID}', '{dateTime}', '{yapilanIslem}', '{uygulamaYeriCbx.ValueMember}');";
+            SqlInsertData(query);
+
+            MessageBox.Show("Kayıt başarıyla oluşturuldu."); ;
+            BakimDataGridRefresh();
+        }
+
+        private void kaydiSilTool_Click(object sender, EventArgs e)
+        {
+            var bakimId = bakimDataGrid.Rows[rowIndex].Cells["BakimID"].Value;
+            SqlInsertData($"DELETE FROM Bakim_Kayitlari WHERE BakimID = '{bakimId}';");
+            BakimDataGridRefresh();
+
         }
     }
 }

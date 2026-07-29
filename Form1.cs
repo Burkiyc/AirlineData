@@ -72,7 +72,7 @@ namespace AirlineData
             KayitYonetimiBtn.Enabled = false;
             filoForm.Disposed += OnKayitFormClose;
         }
-        
+
         void OnKayitFormClose(object sender, EventArgs e)
         {
             KayitYonetimiBtn.Enabled = true;
@@ -90,6 +90,11 @@ namespace AirlineData
             bakimKayitBtn.Enabled = false;
 
             bakimKayitForm.Disposed += OnBakimKFormClose;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

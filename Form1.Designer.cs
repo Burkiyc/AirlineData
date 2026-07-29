@@ -87,8 +87,9 @@
             button1.Name = "button1";
             button1.Size = new Size(119, 33);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Çıkış";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // tableSelCbx
             // 
@@ -132,7 +133,7 @@
             Name = "Form1";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Havayolu Veritabanı ";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataTableA).EndInit();
             panel1.ResumeLayout(false);

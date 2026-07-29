@@ -42,9 +42,9 @@
             textBox1 = new TextBox();
             quickInfoLbl = new Label();
             bakimContextMenu = new ContextMenuStrip(components);
-            tumKayilar = new ToolStripMenuItem();
             buUçağınTümKayıtlarıToolStripMenuItem = new ToolStripMenuItem();
             currentTableLbl = new Label();
+            kaydiSilTool = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)bakimDataGrid).BeginInit();
             panel2.SuspendLayout();
             bakimContextMenu.SuspendLayout();
@@ -144,7 +144,7 @@
             generateBtn.Name = "generateBtn";
             generateBtn.Size = new Size(81, 26);
             generateBtn.TabIndex = 1;
-            generateBtn.Text = "Oluştur";
+            generateBtn.Text = "Çıkış";
             generateBtn.UseVisualStyleBackColor = true;
             generateBtn.Click += generateBtn_Click;
             // 
@@ -168,21 +168,14 @@
             // 
             // bakimContextMenu
             // 
-            bakimContextMenu.Items.AddRange(new ToolStripItem[] { tumKayilar, buUçağınTümKayıtlarıToolStripMenuItem });
+            bakimContextMenu.Items.AddRange(new ToolStripItem[] { kaydiSilTool, buUçağınTümKayıtlarıToolStripMenuItem });
             bakimContextMenu.Name = "bakimContextMenu";
-            bakimContextMenu.Size = new Size(199, 48);
-            // 
-            // tumKayilar
-            // 
-            tumKayilar.Name = "tumKayilar";
-            tumKayilar.Size = new Size(198, 22);
-            tumKayilar.Text = "Tüm kayıtları görüntüle";
-            tumKayilar.Click += tumKayilar_Click;
+            bakimContextMenu.Size = new Size(197, 70);
             // 
             // buUçağınTümKayıtlarıToolStripMenuItem
             // 
             buUçağınTümKayıtlarıToolStripMenuItem.Name = "buUçağınTümKayıtlarıToolStripMenuItem";
-            buUçağınTümKayıtlarıToolStripMenuItem.Size = new Size(198, 22);
+            buUçağınTümKayıtlarıToolStripMenuItem.Size = new Size(196, 22);
             buUçağınTümKayıtlarıToolStripMenuItem.Text = "Bu uçağın tüm kayıtları";
             buUçağınTümKayıtlarıToolStripMenuItem.Click += buUçağınTümKayıtlarıToolStripMenuItem_Click;
             // 
@@ -195,6 +188,13 @@
             currentTableLbl.Size = new Size(92, 19);
             currentTableLbl.TabIndex = 10;
             currentTableLbl.Text = "Tüm kayıtlar";
+            // 
+            // kaydiSilTool
+            // 
+            kaydiSilTool.Name = "kaydiSilTool";
+            kaydiSilTool.Size = new Size(196, 22);
+            kaydiSilTool.Text = "Bu kaydı sil";
+            kaydiSilTool.Click += kaydiSilTool_Click;
             // 
             // BakimKayitForm
             // 
@@ -231,12 +231,12 @@
         private Button qprsSelBtn;
         private Label quickInfoLbl;
         private ContextMenuStrip bakimContextMenu;
-        private ToolStripMenuItem tumKayilar;
         private Button bakimOlustrBtn;
         private DateTimePicker dateTimePicker1;
         private ToolStripMenuItem buUçağınTümKayıtlarıToolStripMenuItem;
         private TextBox textBox3;
         private Label currentTableLbl;
         private ComboBox uygulamaYeriCbx;
+        private ToolStripMenuItem kaydiSilTool;
     }
 }

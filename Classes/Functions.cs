@@ -65,6 +65,29 @@ namespace AirlineData.Classes
                 return null;
             }
         }
+
+        public static bool SqlDataExists(string query)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(GetConnectionString()))
+                {
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    int result = (int)cmd.ExecuteScalar(); // gettype düzenlenecek
+                    if (result > 0)
+                    {
+                        return true;
+                    }
+                    else return false;
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
         public static void SqlInsertData(string query)
         {
             try
