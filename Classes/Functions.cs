@@ -88,7 +88,7 @@ namespace AirlineData.Classes
                 return false;
             }
         }
-        public static void SqlInsertData(string query)
+        public static int SqlInsertData(string query)
         {
             try
             {
@@ -99,14 +99,15 @@ namespace AirlineData.Classes
                         conn.Open();
                         SqlCommand cmd = new SqlCommand(query, conn);
                         //foreach ()
-                        cmd.ExecuteNonQuery();
+                        return cmd.ExecuteNonQuery();
                         conn.Close();
                     }
                 }
+                MessageBox.Show("İşlem gerçekleştirildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("İşlem gerçekleştirilemedi:\n " + ex.Message, "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return 0;
             }
         }
         public static int SqlInsertScalar(string query)
@@ -124,10 +125,11 @@ namespace AirlineData.Classes
                         conn.Close();
                     }
                 }
+                MessageBox.Show("İşlem gerçekleştirildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message); return 0;
+                MessageBox.Show("İşlem gerçekleştirilemedi:\n " + ex.Message, "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return 0;
             }
         }
         public static void SqlInsertMultiData(string query, SqlCommand cmd)

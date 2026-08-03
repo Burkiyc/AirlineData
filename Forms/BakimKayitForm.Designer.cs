@@ -42,9 +42,9 @@
             textBox1 = new TextBox();
             quickInfoLbl = new Label();
             bakimContextMenu = new ContextMenuStrip(components);
+            kaydiSilTool = new ToolStripMenuItem();
             buUçağınTümKayıtlarıToolStripMenuItem = new ToolStripMenuItem();
             currentTableLbl = new Label();
-            kaydiSilTool = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)bakimDataGrid).BeginInit();
             panel2.SuspendLayout();
             bakimContextMenu.SuspendLayout();
@@ -55,7 +55,7 @@
             refreshBtn2.Location = new Point(734, 103);
             refreshBtn2.Name = "refreshBtn2";
             refreshBtn2.Size = new Size(128, 26);
-            refreshBtn2.TabIndex = 8;
+            refreshBtn2.TabIndex = 7;
             refreshBtn2.Text = "Yenile/Tekrar Yükle";
             refreshBtn2.UseVisualStyleBackColor = true;
             refreshBtn2.Click += refreshBtn2_Click;
@@ -67,6 +67,7 @@
             bakimDataGrid.Name = "bakimDataGrid";
             bakimDataGrid.Size = new Size(850, 489);
             bakimDataGrid.TabIndex = 7;
+            bakimDataGrid.TabStop = false;
             bakimDataGrid.CellMouseClick += bakimDataGrid_CellMouseClick;
             bakimDataGrid.CellMouseDown += bakimDataGrid_CellMouseDown;
             // 
@@ -93,7 +94,7 @@
             uygulamaYeriCbx.Location = new Point(11, 99);
             uygulamaYeriCbx.Name = "uygulamaYeriCbx";
             uygulamaYeriCbx.Size = new Size(99, 23);
-            uygulamaYeriCbx.TabIndex = 7;
+            uygulamaYeriCbx.TabIndex = 5;
             // 
             // textBox3
             // 
@@ -108,7 +109,7 @@
             bakimOlustrBtn.Location = new Point(120, 215);
             bakimOlustrBtn.Name = "bakimOlustrBtn";
             bakimOlustrBtn.Size = new Size(103, 27);
-            bakimOlustrBtn.TabIndex = 5;
+            bakimOlustrBtn.TabIndex = 7;
             bakimOlustrBtn.Text = "Bakım Oluştur";
             bakimOlustrBtn.UseVisualStyleBackColor = true;
             bakimOlustrBtn.Click += bakimOlustrBtn_Click;
@@ -170,7 +171,14 @@
             // 
             bakimContextMenu.Items.AddRange(new ToolStripItem[] { kaydiSilTool, buUçağınTümKayıtlarıToolStripMenuItem });
             bakimContextMenu.Name = "bakimContextMenu";
-            bakimContextMenu.Size = new Size(197, 70);
+            bakimContextMenu.Size = new Size(197, 48);
+            // 
+            // kaydiSilTool
+            // 
+            kaydiSilTool.Name = "kaydiSilTool";
+            kaydiSilTool.Size = new Size(196, 22);
+            kaydiSilTool.Text = "Bu kaydı sil";
+            kaydiSilTool.Click += kaydiSilTool_Click;
             // 
             // buUçağınTümKayıtlarıToolStripMenuItem
             // 
@@ -189,13 +197,6 @@
             currentTableLbl.TabIndex = 10;
             currentTableLbl.Text = "Tüm kayıtlar";
             // 
-            // kaydiSilTool
-            // 
-            kaydiSilTool.Name = "kaydiSilTool";
-            kaydiSilTool.Size = new Size(196, 22);
-            kaydiSilTool.Text = "Bu kaydı sil";
-            kaydiSilTool.Click += kaydiSilTool_Click;
-            // 
             // BakimKayitForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -208,7 +209,6 @@
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "BakimKayitForm";
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "BakimKayitForm";
             Load += BakimKayitForm_Load;

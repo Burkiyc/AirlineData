@@ -8,9 +8,9 @@ namespace AirlineData.Classes
     {
         internal int Id { get; set; }
         internal string KuyrukNo { get; set; }
-        internal string Model { get; set; }
+        internal string? Model { get; set; }
         internal int AlimYili { get; set; }
-        internal int UcusSaati { get; set; }
+        internal decimal UcusSaati { get; set; }
         internal string SimdikiMeydan { get; set; }
     }
 }

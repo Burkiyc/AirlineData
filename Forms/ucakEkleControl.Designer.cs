@@ -53,7 +53,7 @@
             numericUpDown1.Location = new Point(3, 62);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(89, 24);
-            numericUpDown1.TabIndex = 1;
+            numericUpDown1.TabIndex = 2;
             numericUpDown1.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox2
@@ -61,14 +61,14 @@
             textBox2.Location = new Point(3, 33);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(148, 23);
-            textBox2.TabIndex = 3;
+            textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
             textBox3.Location = new Point(3, 91);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(112, 23);
-            textBox3.TabIndex = 4;
+            textBox3.TabIndex = 3;
             // 
             // textBox4
             // 
@@ -84,7 +84,7 @@
             comboBox1.Location = new Point(3, 120);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(112, 23);
-            comboBox1.TabIndex = 6;
+            comboBox1.TabIndex = 4;
             // 
             // ucakEkleControl
             // 

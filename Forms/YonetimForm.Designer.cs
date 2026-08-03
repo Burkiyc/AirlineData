@@ -50,6 +50,7 @@
             prsEkleBtn = new Button();
             yontimCtxMenu = new ContextMenuStrip(components);
             kaydıSilToolStripMenuItem = new ToolStripMenuItem();
+            kaydıDüzenleToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)ucakDataGrid).BeginInit();
             tabControl1.SuspendLayout();
             filoYonetmTab.SuspendLayout();
@@ -66,6 +67,7 @@
             ucakDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             ucakDataGrid.Location = new Point(6, 132);
             ucakDataGrid.Name = "ucakDataGrid";
+            ucakDataGrid.ReadOnly = true;
             ucakDataGrid.Size = new Size(833, 468);
             ucakDataGrid.TabIndex = 0;
             ucakDataGrid.CellMouseDown += ucakDataGrid_CellMouseDown;
@@ -184,7 +186,7 @@
             refreshBtn2.TabIndex = 5;
             refreshBtn2.Text = "Yenile/Tekrar Yükle";
             refreshBtn2.UseVisualStyleBackColor = true;
-            refreshBtn2.Click += refreshBtn_Click;
+            refreshBtn2.Click += refreshBtn2_Click;
             // 
             // persDataGrid
             // 
@@ -192,8 +194,10 @@
             persDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             persDataGrid.Location = new Point(6, 132);
             persDataGrid.Name = "persDataGrid";
+            persDataGrid.ReadOnly = true;
             persDataGrid.Size = new Size(833, 471);
             persDataGrid.TabIndex = 4;
+            persDataGrid.CellMouseDown += persDataGrid_CellMouseDown;
             // 
             // panel2
             // 
@@ -250,16 +254,23 @@
             // 
             // yontimCtxMenu
             // 
-            yontimCtxMenu.Items.AddRange(new ToolStripItem[] { kaydıSilToolStripMenuItem });
+            yontimCtxMenu.Items.AddRange(new ToolStripItem[] { kaydıSilToolStripMenuItem, kaydıDüzenleToolStripMenuItem });
             yontimCtxMenu.Name = "yontimCtxMenu";
-            yontimCtxMenu.Size = new Size(181, 48);
+            yontimCtxMenu.Size = new Size(149, 48);
             // 
             // kaydıSilToolStripMenuItem
             // 
             kaydıSilToolStripMenuItem.Name = "kaydıSilToolStripMenuItem";
-            kaydıSilToolStripMenuItem.Size = new Size(180, 22);
+            kaydıSilToolStripMenuItem.Size = new Size(148, 22);
             kaydıSilToolStripMenuItem.Text = "Kaydı Sil";
             kaydıSilToolStripMenuItem.Click += kaydıSilToolStripMenuItem_Click;
+            // 
+            // kaydıDüzenleToolStripMenuItem
+            // 
+            kaydıDüzenleToolStripMenuItem.Name = "kaydıDüzenleToolStripMenuItem";
+            kaydıDüzenleToolStripMenuItem.Size = new Size(148, 22);
+            kaydıDüzenleToolStripMenuItem.Text = "Kaydı Düzenle";
+            kaydıDüzenleToolStripMenuItem.Click += kaydıDüzenleToolStripMenuItem_Click;
             // 
             // YonetimForm
             // 
@@ -269,7 +280,6 @@
             Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "YonetimForm";
-            ShowIcon = false;
             Text = "Yönetim Paneli";
             Load += YonetimForm_Load;
             ((System.ComponentModel.ISupportInitialize)ucakDataGrid).EndInit();
@@ -310,5 +320,6 @@
         private Label qinfLbl2;
         private ContextMenuStrip yontimCtxMenu;
         private ToolStripMenuItem kaydıSilToolStripMenuItem;
+        private ToolStripMenuItem kaydıDüzenleToolStripMenuItem;
     }
 }

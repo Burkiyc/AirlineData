@@ -23,6 +23,7 @@ namespace AirlineData.Forms
         public BakimKayitForm()
         {
             InitializeComponent();
+            Icon = System.Drawing.Icon.ExtractAssociatedIcon(Application.ExecutablePath);
         }
 
         private void BakimKayitForm_Load(object sender, EventArgs e)

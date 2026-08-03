@@ -28,7 +28,6 @@ namespace AirlineData.Forms
             SendMessage(textBox2.Handle, EM_SETCUEBANNER, 1, "Uçak Modeli...");
             SendMessage(numericUpDown1.Handle, EM_SETCUEBANNER, 1, "Alım Yılı...");
             SendMessage(textBox3.Handle, EM_SETCUEBANNER, 1, "Uçuş Saati...");
-            SendMessage(textBox4.Handle, EM_SETCUEBANNER, 1, "Max Yakıt...");
 
             comboBox1.DataSource = SqlPullData("SELECT ICAO, MeydanKodu FROM HavaMeydanlari");
             comboBox1.DisplayMember = "ICAO";
@@ -57,27 +56,21 @@ namespace AirlineData.Forms
         public int AlimYilNum
         {
             get { return (int)numericUpDown1.Value; }
-            set { numericUpDown1.Value = (decimal)value; }
+            set { numericUpDown1.Value = value; }
         }
 
+
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public string MaxYakitTx
+        public string UcusSaati
         {
             get { return textBox3.Text; }
             set { textBox3.Text = value; }
         }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public string UcusSaati
-        {
-            get { return textBox4.Text; }
-            set { textBox4.Text = value; }
-        }
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string SimdikiMeydan
         {
-            get { return null; }
+            get { return comboBox1.Text; }
         }
 
 

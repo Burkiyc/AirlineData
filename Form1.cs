@@ -1,5 +1,6 @@
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using AirlineData.Forms;
 using Microsoft.Data.SqlClient;
 using static AirlineData.Classes.Functions;
@@ -11,6 +12,7 @@ namespace AirlineData
         public Form1()
         {
             InitializeComponent();
+            Icon = System.Drawing.Icon.ExtractAssociatedIcon(Application.ExecutablePath);
         }
 
         static Dictionary<string, string> tableMap = new Dictionary<string, string>
@@ -40,13 +42,13 @@ namespace AirlineData
         {
             try
             {
-                using (SqlConnection connection = new SqlConnection(GetConnectionString()))
+                using (System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(GetConnectionString()))
                 {
                     connection.Open();
                     object selectedItem = tableSelCbx.SelectedItem;
                     var selectedvalue = (KeyValuePair<string, string>)selectedItem;
                     string query = $"SELECT * FROM [{selectedvalue.Key}]"; // Replace with your actual table name
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                    System.Data.SqlClient.SqlDataAdapter adapter = new System.Data.SqlClient.SqlDataAdapter(query, connection);
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
                     dataTableA.DataSource = dataTable;

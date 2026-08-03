@@ -131,7 +131,6 @@
             Controls.Add(panel1);
             Controls.Add(dataTableA);
             Name = "Form1";
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Havayolu Veritabanı ";
             Load += Form1_Load;
