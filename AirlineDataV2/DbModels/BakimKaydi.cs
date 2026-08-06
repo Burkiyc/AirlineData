@@ -7,13 +7,10 @@ namespace AirlineDataV2.DbModels
 {
     public class BakimKaydi
     {
-        public BakimKaydi()
-        {
-            Personeller = new List<Personel>();
-        }
         public int Id { get; set; }
-        public Ucak Ucak { get; set; }
-        public List<Personel> Personeller { get; set; }
+        public int UcakId { get; set; }
+        public virtual Ucak Ucak { get; set; }
+        public virtual IList<BakimPersonel> BakimPersoneller { get; set; } = new List<BakimPersonel>();
         public DateTime BakimTarihi { get; set; }
 
     }

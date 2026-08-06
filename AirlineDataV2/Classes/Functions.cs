@@ -14,7 +14,7 @@ namespace AirlineData.Classes
         public static string GetConnectionString()
         {
             // Replace with your actual connection string
-            return "Server=.\\PROJELER; Database=Airline; User Id=sa; Password=sql2026dev; TrustServerCertificate=true;";
+            return "Server=.\\PROJELER; Database=AirlineV2; User Id=sa; Password=sql2026dev; TrustServerCertificate=true;";
         }
         static SqlConnection connection = new SqlConnection(GetConnectionString());
         public static int GetDatabaseProps()

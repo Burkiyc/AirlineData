@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace AirlineDataV2.DbModels
@@ -8,11 +9,9 @@ namespace AirlineDataV2.DbModels
     {
         public Ucak() { }
         public int Id { get; set; }
-        public string KuyrukNo { get; set; }
+        [StringLength(6)] public string KuyrukNo { get; set; }
         public string Model { get; set; }
-        public string AlimYili { get; set; }
-        public decimal UcusSaati { get; set; }
-        public string SimdikiMeydan { get; set; }
+        public IList<BakimKaydi> BakimKayitlari { get; set; } = new List<BakimKaydi>();
 
     }
 }
