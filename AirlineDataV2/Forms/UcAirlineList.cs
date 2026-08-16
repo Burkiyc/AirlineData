@@ -101,4 +101,22 @@ public partial class UcAirlineList : XtraUserControl
             return;
         }
     }
+
+    private void simpleButton1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void gridControl1_MouseDown(object sender, MouseEventArgs e)
+    {
+        if (e.Button == MouseButtons.Right)
+        {
+            var hitInfo = gridView1.CalcHitInfo(e.Location);
+            if (hitInfo.InRow)
+            {
+                gridView1.FocusedRowHandle = hitInfo.RowHandle;
+                ucPopupMenu.ShowPopup(MousePosition);
+            }
+        }
+    }
 }

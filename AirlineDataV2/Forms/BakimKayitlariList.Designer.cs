@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BakimKayitlariList));
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            raporOlstrBtn = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             kayitEditBtn = new DevExpress.XtraEditors.SimpleButton();
             kayitSilBtn = new DevExpress.XtraEditors.SimpleButton();
             kayitEkleBtn = new DevExpress.XtraEditors.SimpleButton();
@@ -38,6 +42,7 @@
             gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)panelControl1).BeginInit();
             panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridControl1).BeginInit();
@@ -46,6 +51,9 @@
             // 
             // panelControl1
             // 
+            panelControl1.Controls.Add(raporOlstrBtn);
+            panelControl1.Controls.Add(simpleButton2);
+            panelControl1.Controls.Add(simpleButton1);
             panelControl1.Controls.Add(kayitEditBtn);
             panelControl1.Controls.Add(kayitSilBtn);
             panelControl1.Controls.Add(kayitEkleBtn);
@@ -54,6 +62,34 @@
             panelControl1.Name = "panelControl1";
             panelControl1.Size = new Size(845, 72);
             panelControl1.TabIndex = 2;
+            // 
+            // raporOlstrBtn
+            // 
+            raporOlstrBtn.Anchor = AnchorStyles.Right;
+            raporOlstrBtn.Location = new Point(744, 37);
+            raporOlstrBtn.Name = "raporOlstrBtn";
+            raporOlstrBtn.Size = new Size(96, 29);
+            raporOlstrBtn.TabIndex = 6;
+            raporOlstrBtn.Text = "Rapor Oluştur";
+            raporOlstrBtn.Click += raporOlstrBtn_Click;
+            // 
+            // simpleButton2
+            // 
+            simpleButton2.Location = new Point(230, 5);
+            simpleButton2.Name = "simpleButton2";
+            simpleButton2.Size = new Size(167, 29);
+            simpleButton2.TabIndex = 5;
+            simpleButton2.Text = "Tüm Uçakların Bakımları";
+            simpleButton2.Click += simpleButton2_Click;
+            // 
+            // simpleButton1
+            // 
+            simpleButton1.Location = new Point(230, 37);
+            simpleButton1.Name = "simpleButton1";
+            simpleButton1.Size = new Size(167, 29);
+            simpleButton1.TabIndex = 4;
+            simpleButton1.Text = "Seçilen Uçağın Bakım Kayıtları";
+            simpleButton1.Click += simpleButton1_Click;
             // 
             // kayitEditBtn
             // 
@@ -90,6 +126,8 @@
             // gridControl1
             // 
             gridControl1.Dock = DockStyle.Fill;
+            gridLevelNode1.RelationName = "Detaylar";
+            gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] { gridLevelNode1 });
             gridControl1.Location = new Point(0, 72);
             gridControl1.MainView = gridView1;
             gridControl1.Name = "gridControl1";
@@ -104,7 +142,7 @@
             gridView1.Appearance.ViewCaption.ForeColor = Color.MidnightBlue;
             gridView1.Appearance.ViewCaption.Options.UseFont = true;
             gridView1.Appearance.ViewCaption.Options.UseForeColor = true;
-            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { gridColumn1, gridColumn2, gridColumn3 });
+            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { gridColumn1, gridColumn2, gridColumn3, gridColumn4 });
             gridView1.GridControl = gridControl1;
             gridView1.Name = "gridView1";
             gridView1.OptionsBehavior.Editable = false;
@@ -142,6 +180,12 @@
             gridColumn3.VisibleIndex = 2;
             gridColumn3.Width = 633;
             // 
+            // gridColumn4
+            // 
+            gridColumn4.Caption = "BakımId";
+            gridColumn4.FieldName = "BakimId";
+            gridColumn4.Name = "gridColumn4";
+            // 
             // BakimKayitlariList
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -169,5 +213,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton raporOlstrBtn;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
     }
 }

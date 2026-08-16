@@ -38,14 +38,14 @@
           }
         }
       },
-      "DevExpress.Charts/26.1.3": {
+      "DevExpress.Charts/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts.Core": "[26.1.3]",
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.DataVisualization.Core": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]"
+          "DevExpress.Charts.Core": "[26.1.4]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.DataVisualization.Core": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.XtraCharts.v26.1.dll": {
@@ -58,10 +58,10 @@
           }
         }
       },
-      "DevExpress.Charts.Core/26.1.3": {
+      "DevExpress.Charts.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Charts.v26.1.Core.dll": {
@@ -74,10 +74,10 @@
           }
         }
       },
-      "DevExpress.CodeParser/26.1.3": {
+      "DevExpress.CodeParser/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.CodeParser.v26.1.dll": {}
@@ -86,7 +86,7 @@
           "lib/net8.0/DevExpress.CodeParser.v26.1.dll": {}
         }
       },
-      "DevExpress.Data/26.1.3": {
+      "DevExpress.Data/26.1.4": {
         "type": "package",
         "compile": {
           "lib/net8.0/DevExpress.Data.v26.1.dll": {
@@ -99,11 +99,11 @@
           }
         }
       },
-      "DevExpress.Data.Desktop/26.1.3": {
+      "DevExpress.Data.Desktop/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
           "System.Data.OleDb": "8.0.1"
         },
         "compile": {
@@ -120,16 +120,16 @@
           "build/net8.0-windows/DevExpress.Data.Desktop.props": {}
         }
       },
-      "DevExpress.DataAccess/26.1.3": {
+      "DevExpress.DataAccess/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.CodeParser": "[26.1.3]",
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Office.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]",
-          "DevExpress.Xpo": "[26.1.3]",
+          "DevExpress.CodeParser": "[26.1.4]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Office.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]",
+          "DevExpress.Xpo": "[26.1.4]",
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Configuration.Json": "8.0.1"
@@ -145,26 +145,26 @@
           }
         }
       },
-      "DevExpress.DataAccess.UI/26.1.3": {
+      "DevExpress.DataAccess.UI/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.CodeParser": "[26.1.3]",
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.DataAccess": "[26.1.3]",
-          "DevExpress.Diagram.Core": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Utils.UI": "[26.1.3]",
-          "DevExpress.Win.Diagram": "[26.1.3]",
-          "DevExpress.Win.Grid": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.RichEdit": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]",
-          "DevExpress.Xpo": "[26.1.3]"
+          "DevExpress.CodeParser": "[26.1.4]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.DataAccess": "[26.1.4]",
+          "DevExpress.Diagram.Core": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Utils.UI": "[26.1.4]",
+          "DevExpress.Win.Diagram": "[26.1.4]",
+          "DevExpress.Win.Grid": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.RichEdit": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]",
+          "DevExpress.Xpo": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.DataAccess.v26.1.UI.dll": {
@@ -177,11 +177,11 @@
           }
         }
       },
-      "DevExpress.DataVisualization.Core/26.1.3": {
+      "DevExpress.DataVisualization.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.DataVisualization.v26.1.Core.dll": {}
@@ -190,13 +190,13 @@
           "lib/net8.0/DevExpress.DataVisualization.v26.1.Core.dll": {}
         }
       },
-      "DevExpress.Diagram.Core/26.1.3": {
+      "DevExpress.Diagram.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.Diagram.v26.1.Core.dll": {
@@ -212,10 +212,10 @@
           "build/net8.0-windows/DevExpress.Diagram.Core.props": {}
         }
       },
-      "DevExpress.Drawing/26.1.3": {
+      "DevExpress.Drawing/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Drawing.v26.1.dll": {
@@ -228,12 +228,12 @@
           }
         }
       },
-      "DevExpress.Gauges.Core/26.1.3": {
+      "DevExpress.Gauges.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.XtraGauges.v26.1.Core.dll": {
@@ -246,11 +246,11 @@
           }
         }
       },
-      "DevExpress.Images/26.1.3": {
+      "DevExpress.Images/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Images.v26.1.dll": {}
@@ -259,12 +259,12 @@
           "lib/net8.0/DevExpress.Images.v26.1.dll": {}
         }
       },
-      "DevExpress.Map.Core/26.1.3": {
+      "DevExpress.Map.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Map.v26.1.Core.dll": {
@@ -277,7 +277,7 @@
           }
         }
       },
-      "DevExpress.Mvvm/26.1.3": {
+      "DevExpress.Mvvm/26.1.4": {
         "type": "package",
         "compile": {
           "lib/net8.0-windows/DevExpress.Mvvm.v26.1.dll": {
@@ -290,13 +290,13 @@
           }
         }
       },
-      "DevExpress.Office.Core/26.1.3": {
+      "DevExpress.Office.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Office.v26.1.Core.dll": {
@@ -309,11 +309,11 @@
           }
         }
       },
-      "DevExpress.Pdf.Core/26.1.3": {
+      "DevExpress.Pdf.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Pdf.v26.1.Core.dll": {
@@ -326,12 +326,12 @@
           }
         }
       },
-      "DevExpress.Pdf.Drawing/26.1.3": {
+      "DevExpress.Pdf.Drawing/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Pdf.v26.1.Drawing.dll": {
@@ -344,12 +344,12 @@
           }
         }
       },
-      "DevExpress.PivotGrid.Core/26.1.3": {
+      "DevExpress.PivotGrid.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
           "System.Data.OleDb": "8.0.1"
         },
         "compile": {
@@ -363,13 +363,13 @@
           }
         }
       },
-      "DevExpress.Printing.Core/26.1.3": {
+      "DevExpress.Printing.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]",
-          "DevExpress.Pdf.Drawing": "[26.1.3]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]",
+          "DevExpress.Pdf.Drawing": "[26.1.4]",
           "System.ServiceModel.Http": "8.1.2"
         },
         "compile": {
@@ -383,25 +383,25 @@
           }
         }
       },
-      "DevExpress.Reporting.Core/26.1.3": {
+      "DevExpress.Reporting.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts": "[26.1.3]",
-          "DevExpress.Charts.Core": "[26.1.3]",
-          "DevExpress.CodeParser": "[26.1.3]",
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.DataAccess": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Gauges.Core": "[26.1.3]",
-          "DevExpress.Office.Core": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]",
-          "DevExpress.Pdf.Drawing": "[26.1.3]",
-          "DevExpress.PivotGrid.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Export": "[26.1.3]",
-          "DevExpress.Sparkline.Core": "[26.1.3]",
-          "DevExpress.Xpo": "[26.1.3]"
+          "DevExpress.Charts": "[26.1.4]",
+          "DevExpress.Charts.Core": "[26.1.4]",
+          "DevExpress.CodeParser": "[26.1.4]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.DataAccess": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Gauges.Core": "[26.1.4]",
+          "DevExpress.Office.Core": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]",
+          "DevExpress.Pdf.Drawing": "[26.1.4]",
+          "DevExpress.PivotGrid.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Export": "[26.1.4]",
+          "DevExpress.Sparkline.Core": "[26.1.4]",
+          "DevExpress.Xpo": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.XtraReports.v26.1.dll": {
@@ -417,14 +417,14 @@
           "buildTransitive/net8.0/DevExpress.Reporting.Core.targets": {}
         }
       },
-      "DevExpress.RichEdit.Core/26.1.3": {
+      "DevExpress.RichEdit.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Office.Core": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Office.Core": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.RichEdit.v26.1.Core.dll": {
@@ -437,14 +437,14 @@
           }
         }
       },
-      "DevExpress.RichEdit.Export/26.1.3": {
+      "DevExpress.RichEdit.Export/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Office.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Office.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.RichEdit.v26.1.Export.dll": {}
@@ -453,10 +453,10 @@
           "lib/net8.0/DevExpress.RichEdit.v26.1.Export.dll": {}
         }
       },
-      "DevExpress.Scheduler.Core/26.1.3": {
+      "DevExpress.Scheduler.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.XtraScheduler.v26.1.Core.dll": {
@@ -469,16 +469,16 @@
           }
         }
       },
-      "DevExpress.Scheduler.CoreDesktop/26.1.3": {
+      "DevExpress.Scheduler.CoreDesktop/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Images": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Scheduler.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Images": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Scheduler.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraScheduler.v26.1.Core.Desktop.dll": {
@@ -491,11 +491,11 @@
           }
         }
       },
-      "DevExpress.Sparkline.Core/26.1.3": {
+      "DevExpress.Sparkline.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Sparkline.v26.1.Core.dll": {
@@ -508,10 +508,10 @@
           }
         }
       },
-      "DevExpress.SpellChecker.Core/26.1.3": {
+      "DevExpress.SpellChecker.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.SpellChecker.v26.1.Core.dll": {
@@ -524,17 +524,17 @@
           }
         }
       },
-      "DevExpress.Spreadsheet.Core/26.1.3": {
+      "DevExpress.Spreadsheet.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.DataAccess": "[26.1.3]",
-          "DevExpress.DataVisualization.Core": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Office.Core": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Sparkline.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.DataAccess": "[26.1.4]",
+          "DevExpress.DataVisualization.Core": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Office.Core": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Sparkline.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.Spreadsheet.v26.1.Core.dll": {
@@ -547,14 +547,14 @@
           }
         }
       },
-      "DevExpress.TreeMap/26.1.3": {
+      "DevExpress.TreeMap/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.DataVisualization.Core": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.TreeMap.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.DataVisualization.Core": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.TreeMap.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.XtraTreeMap.v26.1.dll": {
@@ -567,10 +567,10 @@
           }
         }
       },
-      "DevExpress.TreeMap.Core/26.1.3": {
+      "DevExpress.TreeMap.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0/DevExpress.TreeMap.v26.1.Core.dll": {
@@ -583,13 +583,13 @@
           }
         }
       },
-      "DevExpress.Utils/26.1.3": {
+      "DevExpress.Utils/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.Utils.v26.1.dll": {
@@ -602,21 +602,21 @@
           }
         }
       },
-      "DevExpress.Utils.UI/26.1.3": {
+      "DevExpress.Utils.UI/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.DataAccess": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.RichEdit": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]",
-          "DevExpress.Win.VerticalGrid": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.DataAccess": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.RichEdit": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]",
+          "DevExpress.Win.VerticalGrid": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.Utils.v26.1.UI.dll": {
@@ -629,20 +629,20 @@
           }
         }
       },
-      "DevExpress.Win/26.1.3": {
+      "DevExpress.Win/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.RichEdit.Export": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Grid": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.PivotGrid": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]",
-          "DevExpress.Win.VerticalGrid": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.RichEdit.Export": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Grid": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.PivotGrid": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]",
+          "DevExpress.Win.VerticalGrid": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraNavBar.v26.1.dll": {
@@ -661,24 +661,24 @@
           }
         }
       },
-      "DevExpress.Win.Charts/26.1.3": {
+      "DevExpress.Win.Charts/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts": "[26.1.3]",
-          "DevExpress.Charts.Core": "[26.1.3]",
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.DataAccess.UI": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Utils.UI": "[26.1.3]",
-          "DevExpress.Win": "[26.1.3]",
-          "DevExpress.Win.Grid": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]",
-          "DevExpress.Win.VerticalGrid": "[26.1.3]"
+          "DevExpress.Charts": "[26.1.4]",
+          "DevExpress.Charts.Core": "[26.1.4]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.DataAccess.UI": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Utils.UI": "[26.1.4]",
+          "DevExpress.Win": "[26.1.4]",
+          "DevExpress.Win.Grid": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]",
+          "DevExpress.Win.VerticalGrid": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraCharts.v26.1.Extensions.dll": {},
@@ -699,40 +699,40 @@
           }
         }
       },
-      "DevExpress.Win.Design/26.1.3": {
+      "DevExpress.Win.Design/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Mvvm": "[26.1.3]",
-          "DevExpress.Win": "[26.1.3]",
-          "DevExpress.Win.Charts": "[26.1.3]",
-          "DevExpress.Win.Diagram": "[26.1.3]",
-          "DevExpress.Win.Dialogs": "[26.1.3]",
-          "DevExpress.Win.Gantt": "[26.1.3]",
-          "DevExpress.Win.Gauges": "[26.1.3]",
-          "DevExpress.Win.Map": "[26.1.3]",
-          "DevExpress.Win.PdfViewer": "[26.1.3]",
-          "DevExpress.Win.Reporting": "[26.1.3]",
-          "DevExpress.Win.RichEdit": "[26.1.3]",
-          "DevExpress.Win.SchedulerExtensions": "[26.1.3]",
-          "DevExpress.Win.SpellChecker": "[26.1.3]",
-          "DevExpress.Win.Spreadsheet": "[26.1.3]",
-          "DevExpress.Win.TreeMap": "[26.1.3]",
-          "DevExpress.Xpo": "[26.1.3]"
+          "DevExpress.Mvvm": "[26.1.4]",
+          "DevExpress.Win": "[26.1.4]",
+          "DevExpress.Win.Charts": "[26.1.4]",
+          "DevExpress.Win.Diagram": "[26.1.4]",
+          "DevExpress.Win.Dialogs": "[26.1.4]",
+          "DevExpress.Win.Gantt": "[26.1.4]",
+          "DevExpress.Win.Gauges": "[26.1.4]",
+          "DevExpress.Win.Map": "[26.1.4]",
+          "DevExpress.Win.PdfViewer": "[26.1.4]",
+          "DevExpress.Win.Reporting": "[26.1.4]",
+          "DevExpress.Win.RichEdit": "[26.1.4]",
+          "DevExpress.Win.SchedulerExtensions": "[26.1.4]",
+          "DevExpress.Win.SpellChecker": "[26.1.4]",
+          "DevExpress.Win.Spreadsheet": "[26.1.4]",
+          "DevExpress.Win.TreeMap": "[26.1.4]",
+          "DevExpress.Xpo": "[26.1.4]"
         }
       },
-      "DevExpress.Win.Diagram/26.1.3": {
+      "DevExpress.Win.Diagram/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Diagram.Core": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.VerticalGrid": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Diagram.Core": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.VerticalGrid": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraDiagram.v26.1.dll": {
@@ -745,17 +745,17 @@
           }
         }
       },
-      "DevExpress.Win.Dialogs/26.1.3": {
+      "DevExpress.Win.Dialogs/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Dialogs.Core": "[26.1.3]",
-          "DevExpress.Win.Grid": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Dialogs.Core": "[26.1.4]",
+          "DevExpress.Win.Grid": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraDialogs.v26.1.dll": {
@@ -768,11 +768,11 @@
           }
         }
       },
-      "DevExpress.Win.Dialogs.Core/26.1.3": {
+      "DevExpress.Win.Dialogs.Core/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.Dialogs.v26.1.Core.dll": {}
@@ -781,17 +781,17 @@
           "lib/net8.0-windows/DevExpress.Dialogs.v26.1.Core.dll": {}
         }
       },
-      "DevExpress.Win.Gantt/26.1.3": {
+      "DevExpress.Win.Gantt/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraGantt.v26.1.dll": {
@@ -804,17 +804,17 @@
           }
         }
       },
-      "DevExpress.Win.Gauges/26.1.3": {
+      "DevExpress.Win.Gauges/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Gauges.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Gauges.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraGauges.v26.1.Presets.dll": {
@@ -833,16 +833,16 @@
           }
         }
       },
-      "DevExpress.Win.Grid/26.1.3": {
+      "DevExpress.Win.Grid/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraGrid.v26.1.dll": {
@@ -855,17 +855,17 @@
           }
         }
       },
-      "DevExpress.Win.Map/26.1.3": {
+      "DevExpress.Win.Map/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Map.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Map.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
           "System.Data.SqlClient": "4.8.6"
         },
         "compile": {
@@ -879,15 +879,15 @@
           }
         }
       },
-      "DevExpress.Win.Navigation/26.1.3": {
+      "DevExpress.Win.Navigation/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Sparkline.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Sparkline.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraBars.v26.1.dll": {
@@ -915,18 +915,18 @@
           "build/net8.0-windows/DevExpress.Win.Navigation.targets": {}
         }
       },
-      "DevExpress.Win.PdfViewer/26.1.3": {
+      "DevExpress.Win.PdfViewer/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]",
-          "DevExpress.Pdf.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]",
+          "DevExpress.Pdf.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraPdfViewer.v26.1.dll": {
@@ -939,16 +939,16 @@
           }
         }
       },
-      "DevExpress.Win.PivotGrid/26.1.3": {
+      "DevExpress.Win.PivotGrid/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.PivotGrid.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.PivotGrid.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraPivotGrid.v26.1.dll": {
@@ -961,17 +961,17 @@
           }
         }
       },
-      "DevExpress.Win.Printing/26.1.3": {
+      "DevExpress.Win.Printing/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraPrinting.v26.1.dll": {
@@ -984,35 +984,35 @@
           }
         }
       },
-      "DevExpress.Win.Reporting/26.1.3": {
+      "DevExpress.Win.Reporting/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts": "[26.1.3]",
-          "DevExpress.Charts.Core": "[26.1.3]",
-          "DevExpress.CodeParser": "[26.1.3]",
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.DataAccess": "[26.1.3]",
-          "DevExpress.DataAccess.UI": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Gauges.Core": "[26.1.3]",
-          "DevExpress.Office.Core": "[26.1.3]",
-          "DevExpress.PivotGrid.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Reporting.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]",
-          "DevExpress.Sparkline.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Utils.UI": "[26.1.3]",
-          "DevExpress.Win": "[26.1.3]",
-          "DevExpress.Win.Charts": "[26.1.3]",
-          "DevExpress.Win.Grid": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.PivotGrid": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.RichEdit": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]",
-          "DevExpress.Win.VerticalGrid": "[26.1.3]"
+          "DevExpress.Charts": "[26.1.4]",
+          "DevExpress.Charts.Core": "[26.1.4]",
+          "DevExpress.CodeParser": "[26.1.4]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.DataAccess": "[26.1.4]",
+          "DevExpress.DataAccess.UI": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Gauges.Core": "[26.1.4]",
+          "DevExpress.Office.Core": "[26.1.4]",
+          "DevExpress.PivotGrid.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Reporting.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]",
+          "DevExpress.Sparkline.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Utils.UI": "[26.1.4]",
+          "DevExpress.Win": "[26.1.4]",
+          "DevExpress.Win.Charts": "[26.1.4]",
+          "DevExpress.Win.Grid": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.PivotGrid": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.RichEdit": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]",
+          "DevExpress.Win.VerticalGrid": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraReports.v26.1.Extensions.dll": {
@@ -1025,21 +1025,21 @@
           }
         }
       },
-      "DevExpress.Win.RichEdit/26.1.3": {
+      "DevExpress.Win.RichEdit/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Images": "[26.1.3]",
-          "DevExpress.Office.Core": "[26.1.3]",
-          "DevExpress.Pdf.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Grid": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Images": "[26.1.4]",
+          "DevExpress.Office.Core": "[26.1.4]",
+          "DevExpress.Pdf.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Grid": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraRichEdit.v26.1.dll": {
@@ -1052,19 +1052,19 @@
           }
         }
       },
-      "DevExpress.Win.Scheduler/26.1.3": {
+      "DevExpress.Win.Scheduler/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Scheduler.Core": "[26.1.3]",
-          "DevExpress.Scheduler.CoreDesktop": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Grid": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Scheduler.Core": "[26.1.4]",
+          "DevExpress.Scheduler.CoreDesktop": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Grid": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraScheduler.v26.1.dll": {
@@ -1077,25 +1077,25 @@
           }
         }
       },
-      "DevExpress.Win.SchedulerExtensions/26.1.3": {
+      "DevExpress.Win.SchedulerExtensions/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Reporting.Core": "[26.1.3]",
-          "DevExpress.Scheduler.Core": "[26.1.3]",
-          "DevExpress.Scheduler.CoreDesktop": "[26.1.3]",
-          "DevExpress.SpellChecker.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.Reporting": "[26.1.3]",
-          "DevExpress.Win.Scheduler": "[26.1.3]",
-          "DevExpress.Win.SchedulerReporting": "[26.1.3]",
-          "DevExpress.Win.SpellChecker": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Reporting.Core": "[26.1.4]",
+          "DevExpress.Scheduler.Core": "[26.1.4]",
+          "DevExpress.Scheduler.CoreDesktop": "[26.1.4]",
+          "DevExpress.SpellChecker.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.Reporting": "[26.1.4]",
+          "DevExpress.Win.Scheduler": "[26.1.4]",
+          "DevExpress.Win.SchedulerReporting": "[26.1.4]",
+          "DevExpress.Win.SpellChecker": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraScheduler.v26.1.Extensions.dll": {
@@ -1114,19 +1114,19 @@
           }
         }
       },
-      "DevExpress.Win.SchedulerReporting/26.1.3": {
+      "DevExpress.Win.SchedulerReporting/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Reporting.Core": "[26.1.3]",
-          "DevExpress.Scheduler.Core": "[26.1.3]",
-          "DevExpress.Scheduler.CoreDesktop": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.Scheduler": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Reporting.Core": "[26.1.4]",
+          "DevExpress.Scheduler.Core": "[26.1.4]",
+          "DevExpress.Scheduler.CoreDesktop": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.Scheduler": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraScheduler.v26.1.Reporting.dll": {
@@ -1139,15 +1139,15 @@
           }
         }
       },
-      "DevExpress.Win.SpellChecker/26.1.3": {
+      "DevExpress.Win.SpellChecker/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.SpellChecker.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.SpellChecker.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraSpellChecker.v26.1.dll": {
@@ -1160,30 +1160,30 @@
           }
         }
       },
-      "DevExpress.Win.Spreadsheet/26.1.3": {
+      "DevExpress.Win.Spreadsheet/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Charts": "[26.1.3]",
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.DataAccess": "[26.1.3]",
-          "DevExpress.DataAccess.UI": "[26.1.3]",
-          "DevExpress.DataVisualization.Core": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Images": "[26.1.3]",
-          "DevExpress.Office.Core": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.RichEdit.Core": "[26.1.3]",
-          "DevExpress.Spreadsheet.Core": "[26.1.3]",
-          "DevExpress.TreeMap": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Utils.UI": "[26.1.3]",
-          "DevExpress.Win": "[26.1.3]",
-          "DevExpress.Win.Grid": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]",
-          "DevExpress.Win.RichEdit": "[26.1.3]",
-          "DevExpress.Win.TreeList": "[26.1.3]"
+          "DevExpress.Charts": "[26.1.4]",
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.DataAccess": "[26.1.4]",
+          "DevExpress.DataAccess.UI": "[26.1.4]",
+          "DevExpress.DataVisualization.Core": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Images": "[26.1.4]",
+          "DevExpress.Office.Core": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.RichEdit.Core": "[26.1.4]",
+          "DevExpress.Spreadsheet.Core": "[26.1.4]",
+          "DevExpress.TreeMap": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Utils.UI": "[26.1.4]",
+          "DevExpress.Win": "[26.1.4]",
+          "DevExpress.Win.Grid": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]",
+          "DevExpress.Win.RichEdit": "[26.1.4]",
+          "DevExpress.Win.TreeList": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraSpreadsheet.v26.1.dll": {
@@ -1196,15 +1196,15 @@
           }
         }
       },
-      "DevExpress.Win.TreeList/26.1.3": {
+      "DevExpress.Win.TreeList/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraTreeList.v26.1.dll": {
@@ -1217,18 +1217,18 @@
           }
         }
       },
-      "DevExpress.Win.TreeMap/26.1.3": {
+      "DevExpress.Win.TreeMap/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.TreeMap": "[26.1.3]",
-          "DevExpress.TreeMap.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.TreeMap": "[26.1.4]",
+          "DevExpress.TreeMap.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraTreeMap.v26.1.UI.dll": {
@@ -1241,16 +1241,16 @@
           }
         }
       },
-      "DevExpress.Win.VerticalGrid/26.1.3": {
+      "DevExpress.Win.VerticalGrid/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
-          "DevExpress.Data.Desktop": "[26.1.3]",
-          "DevExpress.Drawing": "[26.1.3]",
-          "DevExpress.Printing.Core": "[26.1.3]",
-          "DevExpress.Utils": "[26.1.3]",
-          "DevExpress.Win.Navigation": "[26.1.3]",
-          "DevExpress.Win.Printing": "[26.1.3]"
+          "DevExpress.Data": "[26.1.4]",
+          "DevExpress.Data.Desktop": "[26.1.4]",
+          "DevExpress.Drawing": "[26.1.4]",
+          "DevExpress.Printing.Core": "[26.1.4]",
+          "DevExpress.Utils": "[26.1.4]",
+          "DevExpress.Win.Navigation": "[26.1.4]",
+          "DevExpress.Win.Printing": "[26.1.4]"
         },
         "compile": {
           "lib/net8.0-windows/DevExpress.XtraVerticalGrid.v26.1.dll": {
@@ -1263,10 +1263,10 @@
           }
         }
       },
-      "DevExpress.Xpo/26.1.3": {
+      "DevExpress.Xpo/26.1.4": {
         "type": "package",
         "dependencies": {
-          "DevExpress.Data": "[26.1.3]",
+          "DevExpress.Data": "[26.1.4]",
           "Microsoft.Extensions.DependencyInjection": "8.0.1",
           "System.ServiceModel.Http": "8.1.2",
           "System.ServiceModel.NetTcp": "8.1.2"
@@ -2883,14 +2883,14 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "DevExpress.Charts/26.1.3": {
-      "sha512": "GdtOH5wmx6bPRbX2ELOxNNFWx0hmG2FzaatalfArYfS7TXOc3KOR7Homn5SXVxUgzyhqLx3QcKC6k/AlB+q4aw==",
+    "DevExpress.Charts/26.1.4": {
+      "sha512": "fj2+FfBpp197mgXc1zItCkc7je+MkqqQ2VcZ0LI2jZKdxxoakYn0D5Y1aeGel6eKJNIOUcJcqDAp7W6/iyfiog==",
       "type": "package",
-      "path": "devexpress.charts/26.1.3",
+      "path": "devexpress.charts/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.charts.26.1.3.nupkg.sha512",
+        "devexpress.charts.26.1.4.nupkg.sha512",
         "devexpress.charts.nuspec",
         "lib/net462/DevExpress.XtraCharts.v26.1.dll",
         "lib/net462/DevExpress.XtraCharts.v26.1.xml",
@@ -2898,14 +2898,14 @@
         "lib/net8.0/DevExpress.XtraCharts.v26.1.xml"
       ]
     },
-    "DevExpress.Charts.Core/26.1.3": {
-      "sha512": "86AZ7MnJHqIZ8IT1X6iokhHVRtUS90j8LXCJ4XdQTc7hQvphItXGWGrU7PO2NPJVEpY+HFDdD4tOUqp+5BREHg==",
+    "DevExpress.Charts.Core/26.1.4": {
+      "sha512": "vcnDdVyTHGWSOP9KUTbLRfJpUphnYf95h3M7KF9gFdmhRUvP0aWOSakF6ogNUUl7Jmz19RhGInHasjLVxl/MFg==",
       "type": "package",
-      "path": "devexpress.charts.core/26.1.3",
+      "path": "devexpress.charts.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.charts.core.26.1.3.nupkg.sha512",
+        "devexpress.charts.core.26.1.4.nupkg.sha512",
         "devexpress.charts.core.nuspec",
         "lib/net462/DevExpress.Charts.v26.1.Core.dll",
         "lib/net462/DevExpress.Charts.v26.1.Core.xml",
@@ -2913,29 +2913,29 @@
         "lib/net8.0/DevExpress.Charts.v26.1.Core.xml"
       ]
     },
-    "DevExpress.CodeParser/26.1.3": {
-      "sha512": "KLrp5uQN213q7tilorrfaKsTetUT7biUzulgi9+8hCgo8sH83C7qonHv5/qqLI1WxmUsMHXWE8448SoMSN8M0A==",
+    "DevExpress.CodeParser/26.1.4": {
+      "sha512": "FxSaSulUXvndPZr00Z5+1YQsMqcJbuoDs35YbJpVkJ6k9B16NXFWz1ENn0NRRTCBJs4eUh/3IozPrHjNg97hkA==",
       "type": "package",
-      "path": "devexpress.codeparser/26.1.3",
+      "path": "devexpress.codeparser/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.codeparser.26.1.3.nupkg.sha512",
+        "devexpress.codeparser.26.1.4.nupkg.sha512",
         "devexpress.codeparser.nuspec",
         "lib/net462/DevExpress.CodeParser.v26.1.dll",
         "lib/net8.0/DevExpress.CodeParser.v26.1.dll"
       ]
     },
-    "DevExpress.Data/26.1.3": {
-      "sha512": "xRbKnHwqoHSEG50UlmUJqufSDAH1OqxFVL8svphGlG180fT71/GxZLMNlmXpeP5pRzBoSPvb4DoEbB4tAlHMBw==",
+    "DevExpress.Data/26.1.4": {
+      "sha512": "yPgUZmkw+sRNyFNQ//yZwrMoE6e7/+pF21tvBVtBdsjUhDFGB7zFr6nESbmCxkvBHN4EbeJMvVkKcELzaA74Og==",
       "type": "package",
-      "path": "devexpress.data/26.1.3",
+      "path": "devexpress.data/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/DevExpress.Generator.dll",
-        "devexpress.data.26.1.3.nupkg.sha512",
+        "devexpress.data.26.1.4.nupkg.sha512",
         "devexpress.data.nuspec",
         "lib/net462/DevExpress.Data.v26.1.dll",
         "lib/net462/DevExpress.Data.v26.1.xml",
@@ -2946,15 +2946,15 @@
         "tools/uninstall.ps1"
       ]
     },
-    "DevExpress.Data.Desktop/26.1.3": {
-      "sha512": "/Vnlbgz1c0705zqra6TAUR9iAl7AjJexSv5udqerpXwcbdc4pU2Uw6hlU5zBh6MBefcSL5fJYpy/gFlhLgbQjg==",
+    "DevExpress.Data.Desktop/26.1.4": {
+      "sha512": "5oHysT0dFGhZsaKPivCVSpMBKojECCzZg5SNAXp1m8V8MUQBpxXhWgxqQS8sJYIFghlzwasdEn3bOfniqOUjdg==",
       "type": "package",
-      "path": "devexpress.data.desktop/26.1.3",
+      "path": "devexpress.data.desktop/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/net8.0-windows/DevExpress.Data.Desktop.props",
-        "devexpress.data.desktop.26.1.3.nupkg.sha512",
+        "devexpress.data.desktop.26.1.4.nupkg.sha512",
         "devexpress.data.desktop.nuspec",
         "lib/net462/DevExpress.Data.Desktop.v26.1.dll",
         "lib/net462/DevExpress.Data.Desktop.v26.1.xml",
@@ -2962,15 +2962,15 @@
         "lib/net8.0-windows/DevExpress.Data.Desktop.v26.1.xml"
       ]
     },
-    "DevExpress.DataAccess/26.1.3": {
-      "sha512": "6wprPkR8JYdi8EN+fBrNw9PE6InsVkvgYi+3OiYMuWkf4ht0XQbwHLdZ44AzGoD2NnT/jc6dJoJV3rCrFQSBJA==",
+    "DevExpress.DataAccess/26.1.4": {
+      "sha512": "5RNBr+DcLwJYABOm+UQ9UQv49d3IXsCiv4e8Zdbii2Snp8Dy0MSWJJlknmIdYXhnJNuQTNSvhJk1bNf1XgRVdg==",
       "type": "package",
-      "path": "devexpress.dataaccess/26.1.3",
+      "path": "devexpress.dataaccess/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.dataaccess.26.1.3.nupkg.sha512",
+        "devexpress.dataaccess.26.1.4.nupkg.sha512",
         "devexpress.dataaccess.nuspec",
         "lib/net462/DevExpress.DataAccess.v26.1.dll",
         "lib/net462/DevExpress.DataAccess.v26.1.xml",
@@ -2979,15 +2979,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.DataAccess.UI/26.1.3": {
-      "sha512": "dbR6SlolzUo1m8pVlx8TbGs8dr2uiKRGSBFotOAA/tz+Xk/FzX9tKoa9H1wAc/kh2a+e/bx+/S2pm0TBh6O5qQ==",
+    "DevExpress.DataAccess.UI/26.1.4": {
+      "sha512": "nD9rktVhav9zStiJ828JgfyNco+b8Y7UsHvRxCe0VcqVJKGCIOgohyUjyuozQ52/dU/uV/kfg1N6/A2ZXw+Bfg==",
       "type": "package",
-      "path": "devexpress.dataaccess.ui/26.1.3",
+      "path": "devexpress.dataaccess.ui/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.dataaccess.ui.26.1.3.nupkg.sha512",
+        "devexpress.dataaccess.ui.26.1.4.nupkg.sha512",
         "devexpress.dataaccess.ui.nuspec",
         "lib/net462/DevExpress.DataAccess.v26.1.UI.dll",
         "lib/net462/DevExpress.DataAccess.v26.1.UI.xml",
@@ -2999,28 +2999,28 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.DataVisualization.Core/26.1.3": {
-      "sha512": "32psysxRAXapL84OKzmCcE45EsBuGDb09cfJ0QitL9Dy+LcwtRlbJUbwNi9H8SMT1nbNBL+lvYXdup8UZnP2fg==",
+    "DevExpress.DataVisualization.Core/26.1.4": {
+      "sha512": "i/T3OSf17px+7oO7hFQt+fMaWksLjJK5iF/5HXmpkQxAWKubNuyQ5uJKuuyjzkXqvGQMyT54QICLnGzpwFKq6w==",
       "type": "package",
-      "path": "devexpress.datavisualization.core/26.1.3",
+      "path": "devexpress.datavisualization.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.datavisualization.core.26.1.3.nupkg.sha512",
+        "devexpress.datavisualization.core.26.1.4.nupkg.sha512",
         "devexpress.datavisualization.core.nuspec",
         "lib/net462/DevExpress.DataVisualization.v26.1.Core.dll",
         "lib/net8.0/DevExpress.DataVisualization.v26.1.Core.dll"
       ]
     },
-    "DevExpress.Diagram.Core/26.1.3": {
-      "sha512": "/E75OqLF2XyvhfPXQ4SnhRziGV54FFZMtUf6XD9iB1UbgY+8nYB92OCDmKwp/X6h4XvCc++IuUpM5vVS4p6kxA==",
+    "DevExpress.Diagram.Core/26.1.4": {
+      "sha512": "9fGsjqTdWeyHCkopPHX9aFSfWlBYse5wg+rpB2lMdk2gBg2OBresnm7mgdP5ujsHIOpT3YRmhnkEn+7yz79ihA==",
       "type": "package",
-      "path": "devexpress.diagram.core/26.1.3",
+      "path": "devexpress.diagram.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/net8.0-windows/DevExpress.Diagram.Core.props",
-        "devexpress.diagram.core.26.1.3.nupkg.sha512",
+        "devexpress.diagram.core.26.1.4.nupkg.sha512",
         "devexpress.diagram.core.nuspec",
         "lib/net462/DevExpress.Diagram.v26.1.Core.dll",
         "lib/net462/DevExpress.Diagram.v26.1.Core.xml",
@@ -3028,14 +3028,14 @@
         "lib/net8.0-windows/DevExpress.Diagram.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Drawing/26.1.3": {
-      "sha512": "ezIimsm4XMcL8deVPIQW9Js9Jkl7iA64kCL9rXFCTmasL2Cu/M/D8tZQpQGlOwUcenxvCk3lP+fumK/C2M57zw==",
+    "DevExpress.Drawing/26.1.4": {
+      "sha512": "WwkkmPW8DxfRWb6jUqW/O/LpmdZnBe+C5lkWHA4cVpGiDl0NIF3n9NGsN71OeC9YZQUWgewV0rs5uyd84YfGGQ==",
       "type": "package",
-      "path": "devexpress.drawing/26.1.3",
+      "path": "devexpress.drawing/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.drawing.26.1.3.nupkg.sha512",
+        "devexpress.drawing.26.1.4.nupkg.sha512",
         "devexpress.drawing.nuspec",
         "lib/net462/DevExpress.Drawing.v26.1.dll",
         "lib/net462/DevExpress.Drawing.v26.1.xml",
@@ -3043,14 +3043,14 @@
         "lib/net8.0/DevExpress.Drawing.v26.1.xml"
       ]
     },
-    "DevExpress.Gauges.Core/26.1.3": {
-      "sha512": "nmVo0UxPC/dEfx2A9IwyIX4ly47t6XkrY+uvSXlH1fzCAHo31pwgDH6c6NmMh5Z094OjDeQ+YDep50ChtvzhmQ==",
+    "DevExpress.Gauges.Core/26.1.4": {
+      "sha512": "3DsLCnwiaKi4ArMRKXOgEvG/23HW3dGWLitSqwqqdwxCL9iKZEOAs7yT79EVXrJ40+qrHSGvCknKMxV+nJ0m+w==",
       "type": "package",
-      "path": "devexpress.gauges.core/26.1.3",
+      "path": "devexpress.gauges.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.gauges.core.26.1.3.nupkg.sha512",
+        "devexpress.gauges.core.26.1.4.nupkg.sha512",
         "devexpress.gauges.core.nuspec",
         "lib/net462/DevExpress.XtraGauges.v26.1.Core.dll",
         "lib/net462/DevExpress.XtraGauges.v26.1.Core.xml",
@@ -3058,27 +3058,27 @@
         "lib/net8.0/DevExpress.XtraGauges.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Images/26.1.3": {
-      "sha512": "aMohIENnWVnCe3E4QCpy3ti7r4tmZXOScVRnJRoiNnW7ECjm28WR65knOf2q1apytWlytMuqRs4r8e+PHpWGlg==",
+    "DevExpress.Images/26.1.4": {
+      "sha512": "SdIaCZ1wVo0X/pgvZnWAp6+fUC2zvVDQmoE3biNf7lq6IyVX2ezQ6SKScVkyXPWR3JKnpA0opETtJr9jykvnJA==",
       "type": "package",
-      "path": "devexpress.images/26.1.3",
+      "path": "devexpress.images/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.images.26.1.3.nupkg.sha512",
+        "devexpress.images.26.1.4.nupkg.sha512",
         "devexpress.images.nuspec",
         "lib/net462/DevExpress.Images.v26.1.dll",
         "lib/net8.0/DevExpress.Images.v26.1.dll"
       ]
     },
-    "DevExpress.Map.Core/26.1.3": {
-      "sha512": "ZWFIujS/O/30Bs4K2GoYVYWfyfU0PdcIMduqz58c9JLbt9fa6pMiswheZrtAWgYSrzUo5xtmavgzJhtm/deMvw==",
+    "DevExpress.Map.Core/26.1.4": {
+      "sha512": "4A4dwny+YLzA/kltfOknTkHc44u+fZa+mkg+wpKvBjXiC9kNM0SeUHRFHBo2afCGU5J5KQE+pUVHRo5H/sorGA==",
       "type": "package",
-      "path": "devexpress.map.core/26.1.3",
+      "path": "devexpress.map.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.map.core.26.1.3.nupkg.sha512",
+        "devexpress.map.core.26.1.4.nupkg.sha512",
         "devexpress.map.core.nuspec",
         "lib/net462/DevExpress.Map.v26.1.Core.dll",
         "lib/net462/DevExpress.Map.v26.1.Core.xml",
@@ -3086,14 +3086,14 @@
         "lib/net8.0/DevExpress.Map.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Mvvm/26.1.3": {
-      "sha512": "3lcNkhQ6N3qKXayZl6AlGEWwaDO+QmG2SH7Zjv2wc8clGgAnAOaigGMS8L3BT9lIBe9H9MqtvF2MJYeTPUP6Ag==",
+    "DevExpress.Mvvm/26.1.4": {
+      "sha512": "n+dWGqgXywuAKSokfMNMnhkRaSEV6e9n58KL/KuwnbZXUXHAyQh2nwHgiI5yPHnmI9RWwK9T7zhi+M2NKnXhYw==",
       "type": "package",
-      "path": "devexpress.mvvm/26.1.3",
+      "path": "devexpress.mvvm/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.mvvm.26.1.3.nupkg.sha512",
+        "devexpress.mvvm.26.1.4.nupkg.sha512",
         "devexpress.mvvm.nuspec",
         "lib/net462/DevExpress.Mvvm.v26.1.dll",
         "lib/net462/DevExpress.Mvvm.v26.1.xml",
@@ -3101,14 +3101,14 @@
         "lib/net8.0-windows/DevExpress.Mvvm.v26.1.xml"
       ]
     },
-    "DevExpress.Office.Core/26.1.3": {
-      "sha512": "ycggZ8EVIMtCpJ8x8TA1zvhdbAb0HoXOCKusnHY8oteyoHAL0KXdJp40OqlzNyBvO85sGKjIS2td0ciFZux9aQ==",
+    "DevExpress.Office.Core/26.1.4": {
+      "sha512": "AxwQyl8VURTYerH2d8yG9v97WYioK86DUYV7XpDyQy1qdNLF+DNVa0Oe2Pe7U6wY4qBaSwO5yFEJd1vAnwXAQA==",
       "type": "package",
-      "path": "devexpress.office.core/26.1.3",
+      "path": "devexpress.office.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.office.core.26.1.3.nupkg.sha512",
+        "devexpress.office.core.26.1.4.nupkg.sha512",
         "devexpress.office.core.nuspec",
         "lib/net462/DevExpress.Office.v26.1.Core.dll",
         "lib/net462/DevExpress.Office.v26.1.Core.xml",
@@ -3116,14 +3116,14 @@
         "lib/net8.0/DevExpress.Office.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Pdf.Core/26.1.3": {
-      "sha512": "3TiiKQj3G/YgYersJA53YLHVhIXF2JULfY8NMrOw39TCZl5BrjoAyt74QU89q8N668J8tR6QoMgIwNoZNxpSTg==",
+    "DevExpress.Pdf.Core/26.1.4": {
+      "sha512": "g3fvtsA4ijRxu5XKeil/uZHWigpfbL6+2fY3tNOCxipMM2lQwavMJ8kxgeqO1KsZZ5jWz00lq7PBshblIMxQMQ==",
       "type": "package",
-      "path": "devexpress.pdf.core/26.1.3",
+      "path": "devexpress.pdf.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pdf.core.26.1.3.nupkg.sha512",
+        "devexpress.pdf.core.26.1.4.nupkg.sha512",
         "devexpress.pdf.core.nuspec",
         "lib/net462/DevExpress.Pdf.v26.1.Core.dll",
         "lib/net462/DevExpress.Pdf.v26.1.Core.xml",
@@ -3131,14 +3131,14 @@
         "lib/net8.0/DevExpress.Pdf.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Pdf.Drawing/26.1.3": {
-      "sha512": "yke30vDqpL/AkViov+0K0dvIjtuBnpSFc+4DOpzyowHX/JAMk2QpSK0gJ9RvGOF2RZZPfXBUsD+30jAUfaWl6w==",
+    "DevExpress.Pdf.Drawing/26.1.4": {
+      "sha512": "lo3eIzu62YQ9mZyZEqbDa+MaAfDLDOKlXhIHWYevTXbtrSBq6DFBulwYRdtSpTRm62p+1j/zUpKfE2orl1dcKA==",
       "type": "package",
-      "path": "devexpress.pdf.drawing/26.1.3",
+      "path": "devexpress.pdf.drawing/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pdf.drawing.26.1.3.nupkg.sha512",
+        "devexpress.pdf.drawing.26.1.4.nupkg.sha512",
         "devexpress.pdf.drawing.nuspec",
         "lib/net462/DevExpress.Pdf.v26.1.Drawing.dll",
         "lib/net462/DevExpress.Pdf.v26.1.Drawing.xml",
@@ -3146,14 +3146,14 @@
         "lib/net8.0/DevExpress.Pdf.v26.1.Drawing.xml"
       ]
     },
-    "DevExpress.PivotGrid.Core/26.1.3": {
-      "sha512": "9wUq4PPKI8uuzs/AEjfEFhfGAQ9xFsDUzRy4MkUSo/psXqoZO1W7+x/bSZi2x6C1eBFoXNlpRuKy0hWcNcMU4g==",
+    "DevExpress.PivotGrid.Core/26.1.4": {
+      "sha512": "xB52lqcZUCElLyX13dgVehuiOz44Zb9R1KHCOnsm/jA2eTLTYZU3nY63dKo/+x46fBJbu+1gOY7F8yHxS1aq6w==",
       "type": "package",
-      "path": "devexpress.pivotgrid.core/26.1.3",
+      "path": "devexpress.pivotgrid.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.pivotgrid.core.26.1.3.nupkg.sha512",
+        "devexpress.pivotgrid.core.26.1.4.nupkg.sha512",
         "devexpress.pivotgrid.core.nuspec",
         "lib/net462/DevExpress.PivotGrid.v26.1.Core.dll",
         "lib/net462/DevExpress.PivotGrid.v26.1.Core.xml",
@@ -3161,14 +3161,14 @@
         "lib/net8.0/DevExpress.PivotGrid.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Printing.Core/26.1.3": {
-      "sha512": "rxMdPDvUPzuq5Daao+hej/8tpx8wXTlNu4K0vv42iMwMLZ9u+SKxfHVKfDgQffgHM+HWV0DE09VPmINl2E9vTQ==",
+    "DevExpress.Printing.Core/26.1.4": {
+      "sha512": "UsqxeH3p3rGnJIMFdD+vvnwxsUqSF2GYRaODU0UjSS00BY2U/w/ZzRUMMH9liKnmgT77/y7KLJ37muwUwxpeTQ==",
       "type": "package",
-      "path": "devexpress.printing.core/26.1.3",
+      "path": "devexpress.printing.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.printing.core.26.1.3.nupkg.sha512",
+        "devexpress.printing.core.26.1.4.nupkg.sha512",
         "devexpress.printing.core.nuspec",
         "lib/net462/DevExpress.Printing.v26.1.Core.dll",
         "lib/net462/DevExpress.Printing.v26.1.Core.xml",
@@ -3176,17 +3176,17 @@
         "lib/net8.0/DevExpress.Printing.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Reporting.Core/26.1.3": {
-      "sha512": "5tWJkM8vTBoutxxWMtB4OrlLOnl86oRm7tH6+V9cyyAcHlCLQrCpzu8t/1JG4dkl2hCddtmsJwdPQfXIzYvV4Q==",
+    "DevExpress.Reporting.Core/26.1.4": {
+      "sha512": "6f9bqfGAsNQgkgrlFLbAqjW5MPcCzbbjBq7lcdtvfxLcJl7Lj/E+z11O57l9d7inXiAliwu5x4DDyfh0XnVWJw==",
       "type": "package",
-      "path": "devexpress.reporting.core/26.1.3",
+      "path": "devexpress.reporting.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/net8.0/DevExpress.Reporting.Core.targets",
         "buildMultiTargeting/net8.0/DevExpress.Reporting.Core.targets",
         "buildTransitive/net8.0/DevExpress.Reporting.Core.targets",
-        "devexpress.reporting.core.26.1.3.nupkg.sha512",
+        "devexpress.reporting.core.26.1.4.nupkg.sha512",
         "devexpress.reporting.core.nuspec",
         "lib/net462/DevExpress.XtraReports.v26.1.dll",
         "lib/net462/DevExpress.XtraReports.v26.1.xml",
@@ -3194,14 +3194,14 @@
         "lib/net8.0/DevExpress.XtraReports.v26.1.xml"
       ]
     },
-    "DevExpress.RichEdit.Core/26.1.3": {
-      "sha512": "4nkH0gzAIk5wkN1KDo7NOXnizUMCM72cR6tI5DDRh3xTRq/bt9TfmxysYWll3R4PeUCr5fQUh8/E5pO2sEQvzA==",
+    "DevExpress.RichEdit.Core/26.1.4": {
+      "sha512": "VcZzJkMQQ83oexFTwTG7bOS+tvJEnjX1G7/EjnCpG0YlLJ9/iEumG3W4lAjRGTwZ1PEdUF7+rgJQNNWLogHh8w==",
       "type": "package",
-      "path": "devexpress.richedit.core/26.1.3",
+      "path": "devexpress.richedit.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.richedit.core.26.1.3.nupkg.sha512",
+        "devexpress.richedit.core.26.1.4.nupkg.sha512",
         "devexpress.richedit.core.nuspec",
         "lib/net462/DevExpress.RichEdit.v26.1.Core.dll",
         "lib/net462/DevExpress.RichEdit.v26.1.Core.xml",
@@ -3209,27 +3209,27 @@
         "lib/net8.0/DevExpress.RichEdit.v26.1.Core.xml"
       ]
     },
-    "DevExpress.RichEdit.Export/26.1.3": {
-      "sha512": "K5tIzipM39XwVirrumEQ+//2ELRP8PmAGZwk2iUstIQghFOTSegsxCiCGyviGyfzLralr/zrY7HSF2gbQrfiJw==",
+    "DevExpress.RichEdit.Export/26.1.4": {
+      "sha512": "lvJF/OzA2bZsDR8u2Pcx51PT8tzXeEyvX3YR3Y3R/gxIkmIclsqaD6GAh/KIkxLUrXpgBVDXdxVAZYr9Mk5YNw==",
       "type": "package",
-      "path": "devexpress.richedit.export/26.1.3",
+      "path": "devexpress.richedit.export/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.richedit.export.26.1.3.nupkg.sha512",
+        "devexpress.richedit.export.26.1.4.nupkg.sha512",
         "devexpress.richedit.export.nuspec",
         "lib/net462/DevExpress.RichEdit.v26.1.Export.dll",
         "lib/net8.0/DevExpress.RichEdit.v26.1.Export.dll"
       ]
     },
-    "DevExpress.Scheduler.Core/26.1.3": {
-      "sha512": "3/NeM78pjewgd6fUxgav5ZuLMfX2hJpbBakikI4DSzBlx56yPXLX076PAvwgYsT9IGEeo69Ailaf+DXnp7vPbg==",
+    "DevExpress.Scheduler.Core/26.1.4": {
+      "sha512": "pV9a286VvQ7WPMEMGZe6+Ue6LDUxWqUcXW4q8e8kJwqvLlWgyvYhYNQoOVlvgmrztbW9BRM4JrK3cly6meAZiQ==",
       "type": "package",
-      "path": "devexpress.scheduler.core/26.1.3",
+      "path": "devexpress.scheduler.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.scheduler.core.26.1.3.nupkg.sha512",
+        "devexpress.scheduler.core.26.1.4.nupkg.sha512",
         "devexpress.scheduler.core.nuspec",
         "lib/net462/DevExpress.XtraScheduler.v26.1.Core.dll",
         "lib/net462/DevExpress.XtraScheduler.v26.1.Core.xml",
@@ -3237,14 +3237,14 @@
         "lib/net8.0/DevExpress.XtraScheduler.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Scheduler.CoreDesktop/26.1.3": {
-      "sha512": "DCXH7GN8m3iYloqPAyOzv7m7r5AlnDtGuquzaEsA6BnXewisQL64N28H9u+Cboijw5/NvB+tse2cfozyFA9kKg==",
+    "DevExpress.Scheduler.CoreDesktop/26.1.4": {
+      "sha512": "XToFZJDXnGzMyPskIAmPgAJIz217NdxHCiNwO88T3Ss9zld/JAP3oHd4/x+NEOVHi2pkteT8hq5JGJI7VDRe9Q==",
       "type": "package",
-      "path": "devexpress.scheduler.coredesktop/26.1.3",
+      "path": "devexpress.scheduler.coredesktop/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.scheduler.coredesktop.26.1.3.nupkg.sha512",
+        "devexpress.scheduler.coredesktop.26.1.4.nupkg.sha512",
         "devexpress.scheduler.coredesktop.nuspec",
         "lib/net462/DevExpress.XtraScheduler.v26.1.Core.Desktop.dll",
         "lib/net462/DevExpress.XtraScheduler.v26.1.Core.Desktop.xml",
@@ -3252,14 +3252,14 @@
         "lib/net8.0-windows/DevExpress.XtraScheduler.v26.1.Core.Desktop.xml"
       ]
     },
-    "DevExpress.Sparkline.Core/26.1.3": {
-      "sha512": "2n6vWT84P1lRRZEwHO7CRm3vrpVkXpCGc9mfdaVhSiw//x6PxlIXKE/YoJ5F7yn4+HRjfVnHIdPh8GFMogeTxw==",
+    "DevExpress.Sparkline.Core/26.1.4": {
+      "sha512": "LDL8x7IyVvwh//EiIg1aX4FUuSZ69GjrxXkzwhCUHL/ZpYrGQnOvakyBHYVNIReK3OnEg4yDuCG0rpNf7w2M4g==",
       "type": "package",
-      "path": "devexpress.sparkline.core/26.1.3",
+      "path": "devexpress.sparkline.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.sparkline.core.26.1.3.nupkg.sha512",
+        "devexpress.sparkline.core.26.1.4.nupkg.sha512",
         "devexpress.sparkline.core.nuspec",
         "lib/net462/DevExpress.Sparkline.v26.1.Core.dll",
         "lib/net462/DevExpress.Sparkline.v26.1.Core.xml",
@@ -3267,14 +3267,14 @@
         "lib/net8.0/DevExpress.Sparkline.v26.1.Core.xml"
       ]
     },
-    "DevExpress.SpellChecker.Core/26.1.3": {
-      "sha512": "Pq9OipkClyK3HOiK7jkhMYiO8mrkoV85TofV4JYj30Tmb0Brz+q/myfoq1gZnTWfQsukssy3rxq58Jc49Hz02Q==",
+    "DevExpress.SpellChecker.Core/26.1.4": {
+      "sha512": "rfR2TXqpQmbhRV1ls7CH09C+H4nG/AH4aOXAUeSuFctIHcEG6C31HpIDtc5sgk8BjH8awSnWae6ZBVnaouMUAQ==",
       "type": "package",
-      "path": "devexpress.spellchecker.core/26.1.3",
+      "path": "devexpress.spellchecker.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.spellchecker.core.26.1.3.nupkg.sha512",
+        "devexpress.spellchecker.core.26.1.4.nupkg.sha512",
         "devexpress.spellchecker.core.nuspec",
         "lib/net462/DevExpress.SpellChecker.v26.1.Core.dll",
         "lib/net462/DevExpress.SpellChecker.v26.1.Core.xml",
@@ -3282,14 +3282,14 @@
         "lib/net8.0/DevExpress.SpellChecker.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Spreadsheet.Core/26.1.3": {
-      "sha512": "Ps/tLjlpuFp24JQtJcwOJsD+MpbA46X6eu7l7Tv8ApDh3RTRQSfAvDY2UXpqJraLFW4Rm3V4N62PX0npyZEyVw==",
+    "DevExpress.Spreadsheet.Core/26.1.4": {
+      "sha512": "s9AcNBffvbGFfYdClJcAtmKvx0E8ahq9vMFfHaJCIyC/ImStnFTUwB3KjbDeq9m1RY+j7GKGq9m43quqRxiawQ==",
       "type": "package",
-      "path": "devexpress.spreadsheet.core/26.1.3",
+      "path": "devexpress.spreadsheet.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.spreadsheet.core.26.1.3.nupkg.sha512",
+        "devexpress.spreadsheet.core.26.1.4.nupkg.sha512",
         "devexpress.spreadsheet.core.nuspec",
         "lib/net462/DevExpress.Spreadsheet.v26.1.Core.dll",
         "lib/net462/DevExpress.Spreadsheet.v26.1.Core.xml",
@@ -3297,14 +3297,14 @@
         "lib/net8.0/DevExpress.Spreadsheet.v26.1.Core.xml"
       ]
     },
-    "DevExpress.TreeMap/26.1.3": {
-      "sha512": "CXTQJ2g8/du1rnYW9Dk1HtuArm41jvgsdRoJwslSSngEWlS+EuavlkcmGhSD4z+FiaXt0swbVdCO3JUHdjv2hA==",
+    "DevExpress.TreeMap/26.1.4": {
+      "sha512": "iB1lVG6ePIWaXxXOz5/moIlO37RQDES1Tc042aHte/QyWvsnMTvDEeAEmDGJUdc0sga9xZdLtetHW3cT4i6JhQ==",
       "type": "package",
-      "path": "devexpress.treemap/26.1.3",
+      "path": "devexpress.treemap/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.treemap.26.1.3.nupkg.sha512",
+        "devexpress.treemap.26.1.4.nupkg.sha512",
         "devexpress.treemap.nuspec",
         "lib/net462/DevExpress.XtraTreeMap.v26.1.dll",
         "lib/net462/DevExpress.XtraTreeMap.v26.1.xml",
@@ -3312,14 +3312,14 @@
         "lib/net8.0/DevExpress.XtraTreeMap.v26.1.xml"
       ]
     },
-    "DevExpress.TreeMap.Core/26.1.3": {
-      "sha512": "F49KwATKCjdaqa5xPvKRm1jXMRlQoRx2BAPVPgTkx+hoz1b86N+SrWX+U+2WsobrhsqXmn3SMRep5p9hVgAh3A==",
+    "DevExpress.TreeMap.Core/26.1.4": {
+      "sha512": "vzPzATRWEfRUDpTTDkEizJrL21/NfmzfYnn0dch0vaazErWDFs4dXP1z+TWvVowamoTHGpWYS+sEJVFqvEUp0Q==",
       "type": "package",
-      "path": "devexpress.treemap.core/26.1.3",
+      "path": "devexpress.treemap.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.treemap.core.26.1.3.nupkg.sha512",
+        "devexpress.treemap.core.26.1.4.nupkg.sha512",
         "devexpress.treemap.core.nuspec",
         "lib/net462/DevExpress.TreeMap.v26.1.Core.dll",
         "lib/net462/DevExpress.TreeMap.v26.1.Core.xml",
@@ -3327,15 +3327,15 @@
         "lib/net8.0/DevExpress.TreeMap.v26.1.Core.xml"
       ]
     },
-    "DevExpress.Utils/26.1.3": {
-      "sha512": "pPwO3BtG388aEAE2lLiB20zbQTJ2ObDbc6a5+TXLUS2GzF4L5LjAq30eAMjnS5AVYP5kZdLD7Ry3UM1e13nJzQ==",
+    "DevExpress.Utils/26.1.4": {
+      "sha512": "eT5LrSKjU4P2B7KuVn2oZdOdN6btSSg7sFKRp5Voi/l7chMKH0pnP5v7wWj/yzigc5zsyDU83ZhGc7GD79MFpg==",
       "type": "package",
-      "path": "devexpress.utils/26.1.3",
+      "path": "devexpress.utils/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.utils.26.1.3.nupkg.sha512",
+        "devexpress.utils.26.1.4.nupkg.sha512",
         "devexpress.utils.nuspec",
         "lib/net462/DevExpress.Utils.v26.1.dll",
         "lib/net462/DevExpress.Utils.v26.1.xml",
@@ -3344,14 +3344,14 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Utils.UI/26.1.3": {
-      "sha512": "GeCfcubftIsHIFBcfcR09pjBx05AT7R5EVrYtQUb18yuaugA31i7rkC1ogx+jRNGuMXUGj9EnP7QeSVke7yAWg==",
+    "DevExpress.Utils.UI/26.1.4": {
+      "sha512": "+AKqaURt04VmFgx3L2M9ob+LJPI54Ci9KSOUzmYhdUlC3psiv4HSffuEF3Z+LdAqmAG25emz46jrtsfm4UUgIA==",
       "type": "package",
-      "path": "devexpress.utils.ui/26.1.3",
+      "path": "devexpress.utils.ui/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.utils.ui.26.1.3.nupkg.sha512",
+        "devexpress.utils.ui.26.1.4.nupkg.sha512",
         "devexpress.utils.ui.nuspec",
         "lib/net462/DevExpress.Utils.v26.1.UI.dll",
         "lib/net462/DevExpress.Utils.v26.1.UI.xml",
@@ -3359,15 +3359,15 @@
         "lib/net8.0-windows/DevExpress.Utils.v26.1.UI.xml"
       ]
     },
-    "DevExpress.Win/26.1.3": {
-      "sha512": "DawzkJ+59Ha/ukcONyi4aArtuyShH9vrmSBGZ3b1oE5pTxVsn4yedZqAF4IOaPSULJeKLdrMd4aPeg4jaiJgaw==",
+    "DevExpress.Win/26.1.4": {
+      "sha512": "QOdGC8G85v4o9lnl4H/cLGcwU3DUVpfwBEyc6Q5AQ4bnA1QaKqbfsc94jf7nbIsaYTn7eDV0XAcVXeIcUxyaoA==",
       "type": "package",
-      "path": "devexpress.win/26.1.3",
+      "path": "devexpress.win/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.26.1.3.nupkg.sha512",
+        "devexpress.win.26.1.4.nupkg.sha512",
         "devexpress.win.nuspec",
         "lib/net462/DevExpress.XtraNavBar.v26.1.dll",
         "lib/net462/DevExpress.XtraNavBar.v26.1.xml",
@@ -3382,15 +3382,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Charts/26.1.3": {
-      "sha512": "jD/HwDg0KFB+fJmjPl/YfbVYsZ+atmu2jll4ONKW5CEPI550wBNnOuik2Kq3Nr+oDPphf1NzMUHzr1PnXDunVQ==",
+    "DevExpress.Win.Charts/26.1.4": {
+      "sha512": "XWYDkSbZhGe3l+G/+Y65MGzL7SJk+3wwAuVaA79jjOI/VqSLLNXqBEg/lw8AbrBh0HdqUy2UAf9MW3qnqnVB2Q==",
       "type": "package",
-      "path": "devexpress.win.charts/26.1.3",
+      "path": "devexpress.win.charts/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.charts.26.1.3.nupkg.sha512",
+        "devexpress.win.charts.26.1.4.nupkg.sha512",
         "devexpress.win.charts.nuspec",
         "lib/net462/DevExpress.XtraCharts.v26.1.Extensions.dll",
         "lib/net462/DevExpress.XtraCharts.v26.1.UI.dll",
@@ -3407,26 +3407,26 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Design/26.1.3": {
-      "sha512": "Tyc4Apo/DJP7gbfn2wzrXunOvX/3Ti6JpoorvOxKK38tIEFH3kfivnJzWQXwAL23nSZp4yJQaX5rDh9wTdLqHQ==",
+    "DevExpress.Win.Design/26.1.4": {
+      "sha512": "0e6c/Br2LyOoZC6ITpjzSoAhSZ2wUJ/YRDL+tqxK1E+BXnzld3Qk9jCjoO//zduZ9O+JeWMeRuV8N2tkD/3uSg==",
       "type": "package",
-      "path": "devexpress.win.design/26.1.3",
+      "path": "devexpress.win.design/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.design.26.1.3.nupkg.sha512",
+        "devexpress.win.design.26.1.4.nupkg.sha512",
         "devexpress.win.design.nuspec"
       ]
     },
-    "DevExpress.Win.Diagram/26.1.3": {
-      "sha512": "FGMXArNbk7SI6gez9mkpWmZKNefJ3I5XifXAmTflGKuRN/ppg6ZvGxW5I9JwByokZQwA+t88n8gc6mxS0f52mA==",
+    "DevExpress.Win.Diagram/26.1.4": {
+      "sha512": "sH+0DmghNNcQIww7dsusUuluQzi0Fcfax6Bj2LTXyc5QLCneeASdVpKUS2SSeauOuW/m32HX+lT0alYHK9djUw==",
       "type": "package",
-      "path": "devexpress.win.diagram/26.1.3",
+      "path": "devexpress.win.diagram/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.diagram.26.1.3.nupkg.sha512",
+        "devexpress.win.diagram.26.1.4.nupkg.sha512",
         "devexpress.win.diagram.nuspec",
         "lib/net462/DevExpress.XtraDiagram.v26.1.dll",
         "lib/net462/DevExpress.XtraDiagram.v26.1.xml",
@@ -3437,15 +3437,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Dialogs/26.1.3": {
-      "sha512": "xnFwgDUXwKav4I3DWpWIelXhzT2xqO4Flua1UDqPYmMkoWV/Aev5wpuFHWA+P2hz98UmjDh+7xM0/q1yJCJIEA==",
+    "DevExpress.Win.Dialogs/26.1.4": {
+      "sha512": "Zltb/6xv51n8heYV/ifNDhhsNtlbptbGrcY1wmwruLEzERbbQ/ea6FkMCZ1f0hO9XbtSRu0mUUauHXd0dvedEQ==",
       "type": "package",
-      "path": "devexpress.win.dialogs/26.1.3",
+      "path": "devexpress.win.dialogs/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.dialogs.26.1.3.nupkg.sha512",
+        "devexpress.win.dialogs.26.1.4.nupkg.sha512",
         "devexpress.win.dialogs.nuspec",
         "lib/net462/DevExpress.XtraDialogs.v26.1.dll",
         "lib/net462/DevExpress.XtraDialogs.v26.1.xml",
@@ -3456,28 +3456,28 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Dialogs.Core/26.1.3": {
-      "sha512": "NobRB4MjH5nHF+9yBjD5G0+ExlLl9OSnXZzhTNo/F9WYAg/MzOoz/t6BMZFFjYOcGvH48Q947wbsNLB17w2kZA==",
+    "DevExpress.Win.Dialogs.Core/26.1.4": {
+      "sha512": "NdLtfM+nLiYcLeNbHgqehkCJoQOU4Sl55WWclzy+6lDXOoqj9G4M/x/zDnGIVv7tuOhqcXHqu51l7/woly4T6g==",
       "type": "package",
-      "path": "devexpress.win.dialogs.core/26.1.3",
+      "path": "devexpress.win.dialogs.core/26.1.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.dialogs.core.26.1.3.nupkg.sha512",
+        "devexpress.win.dialogs.core.26.1.4.nupkg.sha512",
         "devexpress.win.dialogs.core.nuspec",
         "lib/net462/DevExpress.Dialogs.v26.1.Core.dll",
         "lib/net8.0-windows/DevExpress.Dialogs.v26.1.Core.dll"
       ]
     },
-    "DevExpress.Win.Gantt/26.1.3": {
-      "sha512": "rSl6i/vHn0KT1uy0TQehP2kipavTObR7EgDlfRs7f8ZYMKygZ4cU3H69W6KfcxulapvxumI6p5H9w26epUhG/w==",
+    "DevExpress.Win.Gantt/26.1.4": {
+      "sha512": "4CjtILJ4Uyk/olvjiHiRkyQ2blwe+ESRV3/jj6P/8XnxNyQoRw7c2ELgGr1izdDUXnPWJ+svmmB8mdMA8q+0bA==",
       "type": "package",
-      "path": "devexpress.win.gantt/26.1.3",
+      "path": "devexpress.win.gantt/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.gantt.26.1.3.nupkg.sha512",
+        "devexpress.win.gantt.26.1.4.nupkg.sha512",
         "devexpress.win.gantt.nuspec",
         "lib/net462/DevExpress.XtraGantt.v26.1.dll",
         "lib/net462/DevExpress.XtraGantt.v26.1.xml",
@@ -3488,15 +3488,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Gauges/26.1.3": {
-      "sha512": "aA6ih0sIaNxDPOOgs6yKtiylZSSB5+2xHVNNv5uHcvlLLA0bvYpvHmpBzjM0dO3InK7ELMnvfsES5pgf9VupJQ==",
+    "DevExpress.Win.Gauges/26.1.4": {
+      "sha512": "Zns0UXQKjMeA9p1YLmqF7UM7li7CgTybQB9fl1f6Dnkc8yj7NHZ/0TcceqIcX6Wye52WdCgmTVYrMGpno5Euxg==",
       "type": "package",
-      "path": "devexpress.win.gauges/26.1.3",
+      "path": "devexpress.win.gauges/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.gauges.26.1.3.nupkg.sha512",
+        "devexpress.win.gauges.26.1.4.nupkg.sha512",
         "devexpress.win.gauges.nuspec",
         "lib/net462/DevExpress.XtraGauges.v26.1.Presets.dll",
         "lib/net462/DevExpress.XtraGauges.v26.1.Presets.xml",
@@ -3511,15 +3511,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Grid/26.1.3": {
-      "sha512": "4gef2mlUoK/G0L1tDdM4iAqnIZGWx72Ms/206iKOuT2gc+vsdq4hez99nUnP/UO0BRpCniY2ke/ZexSdNXujEQ==",
+    "DevExpress.Win.Grid/26.1.4": {
+      "sha512": "Q0WiYwxunDtJqFwp60tC2GGRKa8pQp5+bq22O7uya0Qn8HBnnbSmpbXMHDy0iB3eHs0m1kQwkjkG2sykicTedQ==",
       "type": "package",
-      "path": "devexpress.win.grid/26.1.3",
+      "path": "devexpress.win.grid/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.grid.26.1.3.nupkg.sha512",
+        "devexpress.win.grid.26.1.4.nupkg.sha512",
         "devexpress.win.grid.nuspec",
         "lib/net462/DevExpress.XtraGrid.v26.1.dll",
         "lib/net462/DevExpress.XtraGrid.v26.1.xml",
@@ -3530,15 +3530,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Map/26.1.3": {
-      "sha512": "4Eqm8wiu4Clnt2njOlPz+rFYO3cmF2mzEvvXr+pE74Mv0TkrpmxBvIfocveNkaQP42PQvmyHfcQTjTfxhxf9xw==",
+    "DevExpress.Win.Map/26.1.4": {
+      "sha512": "2Iw82YZ9JJfZonygsTs9JgCg02W+DENqDqL4Ja9SEtgbFmRZ8LuokQ+oERK7zFXB13R4i7YU0rrMLI12CL4sgQ==",
       "type": "package",
-      "path": "devexpress.win.map/26.1.3",
+      "path": "devexpress.win.map/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.map.26.1.3.nupkg.sha512",
+        "devexpress.win.map.26.1.4.nupkg.sha512",
         "devexpress.win.map.nuspec",
         "lib/net462/DevExpress.XtraMap.v26.1.dll",
         "lib/net462/DevExpress.XtraMap.v26.1.xml",
@@ -3549,16 +3549,16 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Navigation/26.1.3": {
-      "sha512": "2BD96EZaK+gK3zhexrGIoLh3mgnSXbXibx5OI/tWHe3IHdqe8Qz+XapKPJcwHvzRJspmH41n86uj84ITuQOymQ==",
+    "DevExpress.Win.Navigation/26.1.4": {
+      "sha512": "mq+ZBeopJzS0dhikXRu32esyCtllQqnWCpD3gS3f3xVz6Vwik9AouWYNmO4RES7pCZCYoOgkBS9y01lIIB34LQ==",
       "type": "package",
-      "path": "devexpress.win.navigation/26.1.3",
+      "path": "devexpress.win.navigation/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/net8.0-windows/DevExpress.Win.Navigation.targets",
-        "devexpress.win.navigation.26.1.3.nupkg.sha512",
+        "devexpress.win.navigation.26.1.4.nupkg.sha512",
         "devexpress.win.navigation.nuspec",
         "lib/net462/DevExpress.XtraBars.v26.1.dll",
         "lib/net462/DevExpress.XtraBars.v26.1.xml",
@@ -3592,15 +3592,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.PdfViewer/26.1.3": {
-      "sha512": "mc/kLY4SfgMtSrVN5eLiuwvG22EJrgob5MlL7+73kyp1H55AFe3+qpCyqpWWtvcdy+ydutMmqLoNM+gjbBqUTA==",
+    "DevExpress.Win.PdfViewer/26.1.4": {
+      "sha512": "d+6EPC5naU93Edq9OyaSlWgpKfJ5MECJbEhqFhGlfZdyeB7CIzvep+dZr4WSXZH2MTv0TO0UACFZ3XOdsEC7fg==",
       "type": "package",
-      "path": "devexpress.win.pdfviewer/26.1.3",
+      "path": "devexpress.win.pdfviewer/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.pdfviewer.26.1.3.nupkg.sha512",
+        "devexpress.win.pdfviewer.26.1.4.nupkg.sha512",
         "devexpress.win.pdfviewer.nuspec",
         "lib/net462/DevExpress.XtraPdfViewer.v26.1.dll",
         "lib/net462/DevExpress.XtraPdfViewer.v26.1.xml",
@@ -3611,15 +3611,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.PivotGrid/26.1.3": {
-      "sha512": "oYqp+i2waYlzB8+4yXeEVMTfLx6pAmGUuqLl5MGparzgfcPQK+Itgk8JRIu8enygP1S6oY6aR1dD5eup9PzQ8A==",
+    "DevExpress.Win.PivotGrid/26.1.4": {
+      "sha512": "g7yKdlcXR2a0zQNWCzdwNefeEkWm2FhlQiAcMekza7E5TUncdzrO2J5U7Io85IaV2KEmsq7Z1S6X5Wi+O7O3qg==",
       "type": "package",
-      "path": "devexpress.win.pivotgrid/26.1.3",
+      "path": "devexpress.win.pivotgrid/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.pivotgrid.26.1.3.nupkg.sha512",
+        "devexpress.win.pivotgrid.26.1.4.nupkg.sha512",
         "devexpress.win.pivotgrid.nuspec",
         "lib/net462/DevExpress.XtraPivotGrid.v26.1.dll",
         "lib/net462/DevExpress.XtraPivotGrid.v26.1.xml",
@@ -3630,15 +3630,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Printing/26.1.3": {
-      "sha512": "Cktc9k2E449Q8aOuRXRLd8nfwcQXN5DkrP3Cd+DBun5aXnphNdQp2eZyetGJ17aTWq67E4lUi1UhBTAZlgZgLw==",
+    "DevExpress.Win.Printing/26.1.4": {
+      "sha512": "3H2tF+OCxhKMho6DJLro+mhU/Ck4cjnrlqD+D4BW3SoETZv6FewuoSdehkwd6wsawD/VwsgnWoPMpn4UMqEmuA==",
       "type": "package",
-      "path": "devexpress.win.printing/26.1.3",
+      "path": "devexpress.win.printing/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.printing.26.1.3.nupkg.sha512",
+        "devexpress.win.printing.26.1.4.nupkg.sha512",
         "devexpress.win.printing.nuspec",
         "lib/net462/DevExpress.XtraPrinting.v26.1.dll",
         "lib/net462/DevExpress.XtraPrinting.v26.1.xml",
@@ -3647,15 +3647,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Reporting/26.1.3": {
-      "sha512": "K/F8YooX5UiMgm3s95IkeLsQy+0R79PfJYISOcq1vrB1IL/4v60fcRHpAJXz4U3ZU3084/AxYAT5fSv5Ou/e6Q==",
+    "DevExpress.Win.Reporting/26.1.4": {
+      "sha512": "U8o6RKn61oeNNdd58gYLZ4+gnDA3BOMBTjwrnkGA0Nkp+Z0MbfErYK/nNS1R9dD2FltvrzHFqaXVn/ocPe5kTA==",
       "type": "package",
-      "path": "devexpress.win.reporting/26.1.3",
+      "path": "devexpress.win.reporting/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.reporting.26.1.3.nupkg.sha512",
+        "devexpress.win.reporting.26.1.4.nupkg.sha512",
         "devexpress.win.reporting.nuspec",
         "lib/net462/DevExpress.XtraReports.v26.1.Extensions.dll",
         "lib/net462/DevExpress.XtraReports.v26.1.Extensions.xml",
@@ -3666,15 +3666,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.RichEdit/26.1.3": {
-      "sha512": "62xK/hAn9DKISZnNXpMVwwv1y9LVAt7t2iexdyM+VFjL93nfydrAEuUJz3EQajXZlCGfowOKt64pqBfHElUcqQ==",
+    "DevExpress.Win.RichEdit/26.1.4": {
+      "sha512": "2RqFCi5D9DEy3w6C8N2IXpkNkY4WxHE1OzzGeAR2901T+37KQ0wQgYUuPbtd+uCwtTyOSYfMzUhyaq0JCWjN/w==",
       "type": "package",
-      "path": "devexpress.win.richedit/26.1.3",
+      "path": "devexpress.win.richedit/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.richedit.26.1.3.nupkg.sha512",
+        "devexpress.win.richedit.26.1.4.nupkg.sha512",
         "devexpress.win.richedit.nuspec",
         "lib/net462/DevExpress.XtraRichEdit.v26.1.dll",
         "lib/net462/DevExpress.XtraRichEdit.v26.1.xml",
@@ -3685,15 +3685,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Scheduler/26.1.3": {
-      "sha512": "jAam3c2RHj2hNKFeMku9rglA8KC6IYq+EgwNYbwmCJRgLNyvh2Gu7u4o9g3/7cooARF/WLXwNdUMLUTglgnBpg==",
+    "DevExpress.Win.Scheduler/26.1.4": {
+      "sha512": "UQfX35dKEgDZzysSSX2SwDz1rfYnIJTUsFjuJsQlXMuKj8HP48/L3jERWnw7MBMr6obGebJLN3iwZL8dndbbKw==",
       "type": "package",
-      "path": "devexpress.win.scheduler/26.1.3",
+      "path": "devexpress.win.scheduler/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.scheduler.26.1.3.nupkg.sha512",
+        "devexpress.win.scheduler.26.1.4.nupkg.sha512",
         "devexpress.win.scheduler.nuspec",
         "lib/net462/DevExpress.XtraScheduler.v26.1.dll",
         "lib/net462/DevExpress.XtraScheduler.v26.1.xml",
@@ -3702,15 +3702,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.SchedulerExtensions/26.1.3": {
-      "sha512": "WSJMd+GBNPeLMqWDe4ue0MHVYzljfZjUKzmXD8WNq8b6OTnUqxRbcLJ4VF2abbHpaSZqZkVfpnLmNMAM7mQAEg==",
+    "DevExpress.Win.SchedulerExtensions/26.1.4": {
+      "sha512": "b8Ux2EwztiNfJ9SYIQZyVRXngxfqa67PYxHN07/M6J8N7h8Xwcv1W1yRXrVDk9l6I8U1FwzG7rqiqIg0uqlGIg==",
       "type": "package",
-      "path": "devexpress.win.schedulerextensions/26.1.3",
+      "path": "devexpress.win.schedulerextensions/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.schedulerextensions.26.1.3.nupkg.sha512",
+        "devexpress.win.schedulerextensions.26.1.4.nupkg.sha512",
         "devexpress.win.schedulerextensions.nuspec",
         "lib/net462/DevExpress.XtraScheduler.v26.1.Extensions.dll",
         "lib/net462/DevExpress.XtraScheduler.v26.1.Extensions.xml",
@@ -3725,15 +3725,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.SchedulerReporting/26.1.3": {
-      "sha512": "rBJUYp3TypprL2ciNKk9Wq9J/WEOBeU1DmzoicboRnIvip+yrm/9MSPEhyeritkHW9XOUmrL0rUamYJsckYwWw==",
+    "DevExpress.Win.SchedulerReporting/26.1.4": {
+      "sha512": "mnOLZ/26fZesXAsz1U9sWuvpWM9/NiYlEOgAZ6VogojxEiqeEb8pAhQSPml4YTzbv69jOK/hxAASGYDv090RAA==",
       "type": "package",
-      "path": "devexpress.win.schedulerreporting/26.1.3",
+      "path": "devexpress.win.schedulerreporting/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.schedulerreporting.26.1.3.nupkg.sha512",
+        "devexpress.win.schedulerreporting.26.1.4.nupkg.sha512",
         "devexpress.win.schedulerreporting.nuspec",
         "lib/net462/DevExpress.XtraScheduler.v26.1.Reporting.dll",
         "lib/net462/DevExpress.XtraScheduler.v26.1.Reporting.xml",
@@ -3742,15 +3742,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.SpellChecker/26.1.3": {
-      "sha512": "W4e4icHFFeVCktV05elRqas6JaNJSdZlzi9AkCC34j1/PkbYkQIxICueCXIhB9xYra1a4s/oNHSnSKHvgkAOGQ==",
+    "DevExpress.Win.SpellChecker/26.1.4": {
+      "sha512": "d4VuCCBxRJTIu9M/WUNu9XYhMbwnH06wGEmIuOoP6+7055TVnLJzJB7klBjhjdf11iv4exvaOfXTkLMdfhbT4g==",
       "type": "package",
-      "path": "devexpress.win.spellchecker/26.1.3",
+      "path": "devexpress.win.spellchecker/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.spellchecker.26.1.3.nupkg.sha512",
+        "devexpress.win.spellchecker.26.1.4.nupkg.sha512",
         "devexpress.win.spellchecker.nuspec",
         "lib/net462/DevExpress.XtraSpellChecker.v26.1.dll",
         "lib/net462/DevExpress.XtraSpellChecker.v26.1.xml",
@@ -3761,15 +3761,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.Spreadsheet/26.1.3": {
-      "sha512": "lqFSzOixNIavyrzarK1uVoW+3M1wsTg7FbYZkYfVycqgfN7kR3Ety6gX6RFrSq6UOg+vA175BJ43PEswGU0wGA==",
+    "DevExpress.Win.Spreadsheet/26.1.4": {
+      "sha512": "IGhLfduOMYle5YeFz8o/F4W4VlaXYgealoVgjGo7lmtbLGkt5iIKLwzEi4OD8yfqdUQkSkRDkGL6vJOWm2sApQ==",
       "type": "package",
-      "path": "devexpress.win.spreadsheet/26.1.3",
+      "path": "devexpress.win.spreadsheet/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.spreadsheet.26.1.3.nupkg.sha512",
+        "devexpress.win.spreadsheet.26.1.4.nupkg.sha512",
         "devexpress.win.spreadsheet.nuspec",
         "lib/net462/DevExpress.XtraSpreadsheet.v26.1.dll",
         "lib/net462/DevExpress.XtraSpreadsheet.v26.1.xml",
@@ -3780,15 +3780,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.TreeList/26.1.3": {
-      "sha512": "gd05+vv54UWIdX4x/JLeqYqa2U+fWVOuoa5+d913Bivk4SGxsma18T0ZAT/dWkeTqBmPlEvmPsw/qyz6/SyHvA==",
+    "DevExpress.Win.TreeList/26.1.4": {
+      "sha512": "KsCWug2UwxEkmz2QE6DG9kJg/4EZtI64pAQoYn2X2JFzIAf+4RQqbhg/sXUi3O0PGuduqI6Pbbq0Kvo43UlAIg==",
       "type": "package",
-      "path": "devexpress.win.treelist/26.1.3",
+      "path": "devexpress.win.treelist/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.treelist.26.1.3.nupkg.sha512",
+        "devexpress.win.treelist.26.1.4.nupkg.sha512",
         "devexpress.win.treelist.nuspec",
         "lib/net462/DevExpress.XtraTreeList.v26.1.dll",
         "lib/net462/DevExpress.XtraTreeList.v26.1.xml",
@@ -3799,15 +3799,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.TreeMap/26.1.3": {
-      "sha512": "DTW7kRZJKVRqwsPVg9DrN/5qxNz/VX+uaS3luckItp3hka2VRhttjMWa9wUj2IupdrGtXuL2cBaA92v/OUMpjQ==",
+    "DevExpress.Win.TreeMap/26.1.4": {
+      "sha512": "IB7Gm65wnRWwseUsvfQY8mqyvHf0NjGT/KWuIGDhZaXqYsHyb77Pe3As6O4fteJF4Zi50J1aX4AzJncU05BWJg==",
       "type": "package",
-      "path": "devexpress.win.treemap/26.1.3",
+      "path": "devexpress.win.treemap/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.treemap.26.1.3.nupkg.sha512",
+        "devexpress.win.treemap.26.1.4.nupkg.sha512",
         "devexpress.win.treemap.nuspec",
         "lib/net462/DevExpress.XtraTreeMap.v26.1.UI.dll",
         "lib/net462/DevExpress.XtraTreeMap.v26.1.UI.xml",
@@ -3818,15 +3818,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Win.VerticalGrid/26.1.3": {
-      "sha512": "lSlQp6Izrw8WnqbVto35Wr9cHTntLpg7ZhvVxTOeU5mkmZFIuMq5XwdOSL3Xri/jNUpsQrbnXdqxfL7jUmyztw==",
+    "DevExpress.Win.VerticalGrid/26.1.4": {
+      "sha512": "QQ16z0SV330rlB8clUfYUQGPfiXUxQT9M/wpQznm10AE86P276CRYzA9LcVw37nHAzv8A5iUBSyeIVWdU0tCWA==",
       "type": "package",
-      "path": "devexpress.win.verticalgrid/26.1.3",
+      "path": "devexpress.win.verticalgrid/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.win.verticalgrid.26.1.3.nupkg.sha512",
+        "devexpress.win.verticalgrid.26.1.4.nupkg.sha512",
         "devexpress.win.verticalgrid.nuspec",
         "lib/net462/DevExpress.XtraVerticalGrid.v26.1.dll",
         "lib/net462/DevExpress.XtraVerticalGrid.v26.1.xml",
@@ -3837,15 +3837,15 @@
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "DevExpress.Xpo/26.1.3": {
-      "sha512": "2vn58FI4+3z0lomBm27Vl4I2eSfjIhGr41j4nSnmdkgrp+3xpcWHCr2z5rgiFc467p+AzoaGccHDZ2nhob5LbA==",
+    "DevExpress.Xpo/26.1.4": {
+      "sha512": "IFJKfiI/beDAYnKB7iso4xRLzNZgVl7OCVoRARjupNuGB2+IxVAYMFPmBClpCTpA4Y1gUj3BfT5PS1KVFotw3Q==",
       "type": "package",
-      "path": "devexpress.xpo/26.1.3",
+      "path": "devexpress.xpo/26.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "devexpress.xpo.26.1.3.nupkg.sha512",
+        "devexpress.xpo.26.1.4.nupkg.sha512",
         "devexpress.xpo.nuspec",
         "lib/net462/DevExpress.Xpo.v26.1.dll",
         "lib/net462/DevExpress.Xpo.v26.1.xml",
@@ -6637,6 +6637,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0-windows7.0": [
+      "DevExpress.Reporting.Core >= 26.1.*",
       "DevExpress.Win.Design >= 26.1.*",
       "Microsoft.EntityFrameworkCore >= 10.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.10",
@@ -6693,13 +6694,17 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0-windows7.0": {
         "framework": "net10.0-windows7.0",
         "targetAlias": "net10.0-windows7.0",
         "dependencies": {
+          "DevExpress.Reporting.Core": {
+            "target": "Package",
+            "version": "[26.1.*, )"
+          },
           "DevExpress.Win.Design": {
             "target": "Package",
             "version": "[26.1.*, )"
@@ -6744,7 +6749,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

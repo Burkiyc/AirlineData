@@ -26,11 +26,12 @@ namespace AirlineDataV2.Forms
                 var personel = context.Personeller.Find(personelId);
                 if (personel != null)
                 {
+                    _sectilenPersonel = personel;
                     nameTextBox.Text = personel.AdSoyad;
                 }
             }
-            prsKytEkleBtn.Enabled = false;
-            onaylaBtn.Enabled = true;
+            prsKytEkleBtn.Visible = false;
+            onaylaBtn.Visible = true;
         }
 
         private void prsKytEkleBtn_Click(object sender, EventArgs e)

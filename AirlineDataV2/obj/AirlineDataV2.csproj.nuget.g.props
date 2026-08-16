@@ -18,38 +18,38 @@
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\10.0.10\buildTransitive\net10.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\10.0.10\buildTransitive\net10.0\Microsoft.EntityFrameworkCore.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.11.0\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.11.0\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\10.0.10\build\net10.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\10.0.10\build\net10.0\Microsoft.EntityFrameworkCore.Design.props')" />
-    <Import Project="C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data.desktop\26.1.3\build\net8.0-windows\DevExpress.Data.Desktop.props" Condition="Exists('C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data.desktop\26.1.3\build\net8.0-windows\DevExpress.Data.Desktop.props')" />
-    <Import Project="C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.diagram.core\26.1.3\build\net8.0-windows\DevExpress.Diagram.Core.props" Condition="Exists('C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.diagram.core\26.1.3\build\net8.0-windows\DevExpress.Diagram.Core.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.data.desktop\26.1.4\build\net8.0-windows\DevExpress.Data.Desktop.props" Condition="Exists('$(NuGetPackageRoot)devexpress.data.desktop\26.1.4\build\net8.0-windows\DevExpress.Data.Desktop.props')" />
+    <Import Project="$(NuGetPackageRoot)devexpress.diagram.core\26.1.4\build\net8.0-windows\DevExpress.Diagram.Core.props" Condition="Exists('$(NuGetPackageRoot)devexpress.diagram.core\26.1.4\build\net8.0-windows\DevExpress.Diagram.Core.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Burak\.nuget\packages\microsoft.codeanalysis.analyzers\3.11.0</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Burak\.nuget\packages\microsoft.entityframeworkcore.tools\10.0.10</PkgMicrosoft_EntityFrameworkCore_Tools>
-    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.data\26.1.3</PkgDevExpress_Data>
-    <PkgDevExpress_Xpo Condition=" '$(PkgDevExpress_Xpo)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.xpo\26.1.3</PkgDevExpress_Xpo>
-    <PkgDevExpress_Utils Condition=" '$(PkgDevExpress_Utils)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.utils\26.1.3</PkgDevExpress_Utils>
-    <PkgDevExpress_Win_Navigation Condition=" '$(PkgDevExpress_Win_Navigation)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.navigation\26.1.3</PkgDevExpress_Win_Navigation>
-    <PkgDevExpress_Win_TreeList Condition=" '$(PkgDevExpress_Win_TreeList)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.treelist\26.1.3</PkgDevExpress_Win_TreeList>
-    <PkgDevExpress_Win_Printing Condition=" '$(PkgDevExpress_Win_Printing)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.printing\26.1.3</PkgDevExpress_Win_Printing>
-    <PkgDevExpress_Win_VerticalGrid Condition=" '$(PkgDevExpress_Win_VerticalGrid)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.verticalgrid\26.1.3</PkgDevExpress_Win_VerticalGrid>
-    <PkgDevExpress_Win_TreeMap Condition=" '$(PkgDevExpress_Win_TreeMap)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.treemap\26.1.3</PkgDevExpress_Win_TreeMap>
-    <PkgDevExpress_Win_Grid Condition=" '$(PkgDevExpress_Win_Grid)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.grid\26.1.3</PkgDevExpress_Win_Grid>
-    <PkgDevExpress_Win_RichEdit Condition=" '$(PkgDevExpress_Win_RichEdit)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.richedit\26.1.3</PkgDevExpress_Win_RichEdit>
-    <PkgDevExpress_Win_PivotGrid Condition=" '$(PkgDevExpress_Win_PivotGrid)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.pivotgrid\26.1.3</PkgDevExpress_Win_PivotGrid>
-    <PkgDevExpress_Win_Diagram Condition=" '$(PkgDevExpress_Win_Diagram)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.diagram\26.1.3</PkgDevExpress_Win_Diagram>
-    <PkgDevExpress_Win Condition=" '$(PkgDevExpress_Win)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win\26.1.3</PkgDevExpress_Win>
-    <PkgDevExpress_DataAccess Condition=" '$(PkgDevExpress_DataAccess)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.dataaccess\26.1.3</PkgDevExpress_DataAccess>
-    <PkgDevExpress_DataAccess_UI Condition=" '$(PkgDevExpress_DataAccess_UI)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.dataaccess.ui\26.1.3</PkgDevExpress_DataAccess_UI>
-    <PkgDevExpress_Win_Spreadsheet Condition=" '$(PkgDevExpress_Win_Spreadsheet)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.spreadsheet\26.1.3</PkgDevExpress_Win_Spreadsheet>
-    <PkgDevExpress_Win_SpellChecker Condition=" '$(PkgDevExpress_Win_SpellChecker)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.spellchecker\26.1.3</PkgDevExpress_Win_SpellChecker>
-    <PkgDevExpress_Win_Scheduler Condition=" '$(PkgDevExpress_Win_Scheduler)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.scheduler\26.1.3</PkgDevExpress_Win_Scheduler>
-    <PkgDevExpress_Win_SchedulerReporting Condition=" '$(PkgDevExpress_Win_SchedulerReporting)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.schedulerreporting\26.1.3</PkgDevExpress_Win_SchedulerReporting>
-    <PkgDevExpress_Win_Charts Condition=" '$(PkgDevExpress_Win_Charts)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.charts\26.1.3</PkgDevExpress_Win_Charts>
-    <PkgDevExpress_Win_Reporting Condition=" '$(PkgDevExpress_Win_Reporting)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.reporting\26.1.3</PkgDevExpress_Win_Reporting>
-    <PkgDevExpress_Win_SchedulerExtensions Condition=" '$(PkgDevExpress_Win_SchedulerExtensions)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.schedulerextensions\26.1.3</PkgDevExpress_Win_SchedulerExtensions>
-    <PkgDevExpress_Win_PdfViewer Condition=" '$(PkgDevExpress_Win_PdfViewer)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.pdfviewer\26.1.3</PkgDevExpress_Win_PdfViewer>
-    <PkgDevExpress_Win_Map Condition=" '$(PkgDevExpress_Win_Map)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.map\26.1.3</PkgDevExpress_Win_Map>
-    <PkgDevExpress_Win_Gauges Condition=" '$(PkgDevExpress_Win_Gauges)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.gauges\26.1.3</PkgDevExpress_Win_Gauges>
-    <PkgDevExpress_Win_Gantt Condition=" '$(PkgDevExpress_Win_Gantt)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.gantt\26.1.3</PkgDevExpress_Win_Gantt>
-    <PkgDevExpress_Win_Dialogs Condition=" '$(PkgDevExpress_Win_Dialogs)' == '' ">C:\Program Files\DevExpress 26.1\Components\Offline Packages\devexpress.win.dialogs\26.1.3</PkgDevExpress_Win_Dialogs>
+    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.data\26.1.4</PkgDevExpress_Data>
+    <PkgDevExpress_Xpo Condition=" '$(PkgDevExpress_Xpo)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.xpo\26.1.4</PkgDevExpress_Xpo>
+    <PkgDevExpress_Utils Condition=" '$(PkgDevExpress_Utils)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.utils\26.1.4</PkgDevExpress_Utils>
+    <PkgDevExpress_Win_Navigation Condition=" '$(PkgDevExpress_Win_Navigation)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.navigation\26.1.4</PkgDevExpress_Win_Navigation>
+    <PkgDevExpress_Win_TreeList Condition=" '$(PkgDevExpress_Win_TreeList)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.treelist\26.1.4</PkgDevExpress_Win_TreeList>
+    <PkgDevExpress_Win_Printing Condition=" '$(PkgDevExpress_Win_Printing)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.printing\26.1.4</PkgDevExpress_Win_Printing>
+    <PkgDevExpress_Win_VerticalGrid Condition=" '$(PkgDevExpress_Win_VerticalGrid)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.verticalgrid\26.1.4</PkgDevExpress_Win_VerticalGrid>
+    <PkgDevExpress_Win_TreeMap Condition=" '$(PkgDevExpress_Win_TreeMap)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.treemap\26.1.4</PkgDevExpress_Win_TreeMap>
+    <PkgDevExpress_Win_Grid Condition=" '$(PkgDevExpress_Win_Grid)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.grid\26.1.4</PkgDevExpress_Win_Grid>
+    <PkgDevExpress_Win_RichEdit Condition=" '$(PkgDevExpress_Win_RichEdit)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.richedit\26.1.4</PkgDevExpress_Win_RichEdit>
+    <PkgDevExpress_Win_PivotGrid Condition=" '$(PkgDevExpress_Win_PivotGrid)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.pivotgrid\26.1.4</PkgDevExpress_Win_PivotGrid>
+    <PkgDevExpress_Win_Diagram Condition=" '$(PkgDevExpress_Win_Diagram)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.diagram\26.1.4</PkgDevExpress_Win_Diagram>
+    <PkgDevExpress_Win Condition=" '$(PkgDevExpress_Win)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win\26.1.4</PkgDevExpress_Win>
+    <PkgDevExpress_DataAccess Condition=" '$(PkgDevExpress_DataAccess)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.dataaccess\26.1.4</PkgDevExpress_DataAccess>
+    <PkgDevExpress_DataAccess_UI Condition=" '$(PkgDevExpress_DataAccess_UI)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.dataaccess.ui\26.1.4</PkgDevExpress_DataAccess_UI>
+    <PkgDevExpress_Win_Spreadsheet Condition=" '$(PkgDevExpress_Win_Spreadsheet)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.spreadsheet\26.1.4</PkgDevExpress_Win_Spreadsheet>
+    <PkgDevExpress_Win_SpellChecker Condition=" '$(PkgDevExpress_Win_SpellChecker)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.spellchecker\26.1.4</PkgDevExpress_Win_SpellChecker>
+    <PkgDevExpress_Win_Scheduler Condition=" '$(PkgDevExpress_Win_Scheduler)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.scheduler\26.1.4</PkgDevExpress_Win_Scheduler>
+    <PkgDevExpress_Win_SchedulerReporting Condition=" '$(PkgDevExpress_Win_SchedulerReporting)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.schedulerreporting\26.1.4</PkgDevExpress_Win_SchedulerReporting>
+    <PkgDevExpress_Win_Charts Condition=" '$(PkgDevExpress_Win_Charts)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.charts\26.1.4</PkgDevExpress_Win_Charts>
+    <PkgDevExpress_Win_Reporting Condition=" '$(PkgDevExpress_Win_Reporting)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.reporting\26.1.4</PkgDevExpress_Win_Reporting>
+    <PkgDevExpress_Win_SchedulerExtensions Condition=" '$(PkgDevExpress_Win_SchedulerExtensions)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.schedulerextensions\26.1.4</PkgDevExpress_Win_SchedulerExtensions>
+    <PkgDevExpress_Win_PdfViewer Condition=" '$(PkgDevExpress_Win_PdfViewer)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.pdfviewer\26.1.4</PkgDevExpress_Win_PdfViewer>
+    <PkgDevExpress_Win_Map Condition=" '$(PkgDevExpress_Win_Map)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.map\26.1.4</PkgDevExpress_Win_Map>
+    <PkgDevExpress_Win_Gauges Condition=" '$(PkgDevExpress_Win_Gauges)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.gauges\26.1.4</PkgDevExpress_Win_Gauges>
+    <PkgDevExpress_Win_Gantt Condition=" '$(PkgDevExpress_Win_Gantt)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.gantt\26.1.4</PkgDevExpress_Win_Gantt>
+    <PkgDevExpress_Win_Dialogs Condition=" '$(PkgDevExpress_Win_Dialogs)' == '' ">C:\Users\Burak\.nuget\packages\devexpress.win.dialogs\26.1.4</PkgDevExpress_Win_Dialogs>
   </PropertyGroup>
 </Project>

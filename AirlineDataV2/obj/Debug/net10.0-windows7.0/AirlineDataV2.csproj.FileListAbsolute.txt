@@ -580,3 +580,4 @@ C:\Users\Burak\source\repos\AirlineSolution\AirlineDataV2\obj\Debug\net10.0-wind
 C:\Users\Burak\source\repos\AirlineSolution\AirlineDataV2\obj\Debug\net10.0-windows7.0\AirlineDataV2.Forms.BakimEkle.resources
 C:\Users\Burak\source\repos\AirlineSolution\AirlineDataV2\obj\Debug\net10.0-windows7.0\AirlineDataV2.Forms.PersonellerList.resources
 C:\Users\Burak\source\repos\AirlineSolution\AirlineDataV2\obj\Debug\net10.0-windows7.0\AirlineDataV2.Forms.PersonelForm.resources
+C:\Users\Burak\source\repos\AirlineSolution\AirlineDataV2\obj\Debug\net10.0-windows7.0\AirlineDataV2.Reports.DXWinReport1.resources

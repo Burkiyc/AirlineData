@@ -64,6 +64,7 @@
             UcakLookUpEdit.Properties.NullText = "Uçak Seçiniz ->";
             UcakLookUpEdit.Size = new Size(300, 28);
             UcakLookUpEdit.TabIndex = 2;
+            UcakLookUpEdit.EditValueChanged += UcakLookUpEdit_EditValueChanged;
             // 
             // bakimEkleBtn
             // 

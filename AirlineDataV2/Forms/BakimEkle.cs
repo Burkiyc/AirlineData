@@ -102,30 +102,6 @@ namespace AirlineDataV2.Forms
                 XtraMessageBox.Show($"Veriler yüklenirken bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        //else
-        //{
-        //    try
-        //    {
-        //        using (var context = new DbModels.AirlineDbContext())
-        //        {
-        //            var bakim = context.Ucaklar.FirstOrDefault(u => u.Id == _bakimKaydi.Id);
-        //            UcakLookUpEdit.EditValue = context.Ucaklar.FirstOrDefault(u => u.Id == _bakimKaydi.UcakId)?.Id;
-        //            UcakLookUpEdit.Enabled = false;
-        //            assignedPersoneller = _bakimKaydi.BakimPersoneller
-        //                .Select(bp => new Personel
-        //                {
-        //                    Id = bp.Personel.Id,
-        //                    AdSoyad = bp.Personel.AdSoyad
-        //                })
-        //                .ToList();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        XtraMessageBox.Show($"Veriler yüklenirken bir hata oluştu: {ex.InnerException?.Message ?? ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
-
 
 
         private void bakimEkleBtn_Click(object sender, EventArgs e)
@@ -213,6 +189,13 @@ namespace AirlineDataV2.Forms
             {
                 XtraMessageBox.Show($"Hata oluştu: {ex.InnerException?.Message ?? ex.Message}", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void UcakLookUpEdit_EditValueChanged(object sender, EventArgs e)
+        {
+            assignedPersoneller.Clear();
+            assgndPersList.Refresh();
+            PersLookUpEdit.EditValue = null;
         }
     }
 }

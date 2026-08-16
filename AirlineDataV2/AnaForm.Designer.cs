@@ -36,6 +36,7 @@
             barBtnPersnl = new DevExpress.XtraBars.BarButtonItem();
             ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            Raporlaa = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             panel1 = new Panel();
             ucAirlineList1 = new AirlineDataV2.Forms.UcAirlineList();
             ((System.ComponentModel.ISupportInitialize)ribbonControl1).BeginInit();
@@ -51,7 +52,7 @@
             ribbonControl1.Name = "ribbonControl1";
             ribbonControl1.OptionsCustomizationForm.FormIcon = (Icon)resources.GetObject("resource.FormIcon");
             ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] { ribbonPage1 });
-            ribbonControl1.Size = new Size(1232, 158);
+            ribbonControl1.Size = new Size(1232, 201);
             // 
             // btnUcakListesi
             // 
@@ -82,7 +83,7 @@
             // 
             // ribbonPage1
             // 
-            ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] { ribbonPageGroup1 });
+            ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] { ribbonPageGroup1, Raporlaa });
             ribbonPage1.Name = "ribbonPage1";
             ribbonPage1.Text = "Yönetim";
             // 
@@ -94,13 +95,19 @@
             ribbonPageGroup1.Name = "ribbonPageGroup1";
             ribbonPageGroup1.Text = "Listeler";
             // 
+            // Raporlaa
+            // 
+            Raporlaa.Name = "Raporlaa";
+            Raporlaa.Text = "Filtrele";
+            Raporlaa.Visible = false;
+            // 
             // panel1
             // 
             panel1.Controls.Add(ucAirlineList1);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 158);
+            panel1.Location = new Point(0, 201);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1232, 692);
+            panel1.Size = new Size(1232, 649);
             panel1.TabIndex = 1;
             // 
             // ucAirlineList1
@@ -108,7 +115,7 @@
             ucAirlineList1.Dock = DockStyle.Fill;
             ucAirlineList1.Location = new Point(0, 0);
             ucAirlineList1.Name = "ucAirlineList1";
-            ucAirlineList1.Size = new Size(1232, 692);
+            ucAirlineList1.Size = new Size(1232, 649);
             ucAirlineList1.TabIndex = 0;
             // 
             // AnaForm
@@ -140,5 +147,6 @@
         private Forms.UcAirlineList ucAirlineList1;
         private DevExpress.XtraBars.BarButtonItem btnBakimKayitlari;
         private DevExpress.XtraBars.BarButtonItem barBtnPersnl;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup Raporlaa;
     }
 }

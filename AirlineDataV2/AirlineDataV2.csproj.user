@@ -26,5 +26,8 @@
     <Compile Update="Forms\UcakForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Reports\DXWinReport1.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

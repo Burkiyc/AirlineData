@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcAirlineList));
             gridControl1 = new DevExpress.XtraGrid.GridControl();
             gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -36,10 +37,18 @@
             ucakEditBtn = new DevExpress.XtraEditors.SimpleButton();
             ucakSilBtn = new DevExpress.XtraEditors.SimpleButton();
             ucakEkleBtn = new DevExpress.XtraEditors.SimpleButton();
+            umKytlarPopBtn = new DevExpress.XtraBars.BarButtonItem();
+            bar1 = new DevExpress.XtraBars.Bar();
+            bar2 = new DevExpress.XtraBars.Bar();
+            bar3 = new DevExpress.XtraBars.Bar();
+            bar4 = new DevExpress.XtraBars.Bar();
+            ucPopupMenu = new DevExpress.XtraBars.PopupMenu(components);
+            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)gridControl1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)gridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)panelControl1).BeginInit();
             panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ucPopupMenu).BeginInit();
             SuspendLayout();
             // 
             // gridControl1
@@ -51,6 +60,7 @@
             gridControl1.Size = new Size(845, 432);
             gridControl1.TabIndex = 0;
             gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
+            gridControl1.MouseDown += gridControl1_MouseDown;
             // 
             // gridView1
             // 
@@ -117,6 +127,7 @@
             // 
             // panelControl1
             // 
+            panelControl1.Controls.Add(simpleButton1);
             panelControl1.Controls.Add(ucakEditBtn);
             panelControl1.Controls.Add(ucakSilBtn);
             panelControl1.Controls.Add(ucakEkleBtn);
@@ -158,6 +169,56 @@
             ucakEkleBtn.Text = "Uçak Ekle";
             ucakEkleBtn.Click += ucakEkleBtn_Click;
             // 
+            // umKytlarPopBtn
+            // 
+            umKytlarPopBtn.Caption = "Uçağın tüm bakımları";
+            umKytlarPopBtn.Id = 0;
+            umKytlarPopBtn.Name = "umKytlarPopBtn";
+            // 
+            // bar1
+            // 
+            bar1.BarName = "Custom 2";
+            bar1.DockCol = 0;
+            bar1.DockRow = 0;
+            bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar1.Text = "Custom 2";
+            // 
+            // bar2
+            // 
+            bar2.BarName = "Custom 2";
+            bar2.DockCol = 0;
+            bar2.DockRow = 0;
+            bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar2.Text = "Custom 2";
+            // 
+            // bar3
+            // 
+            bar3.BarName = "Custom 2";
+            bar3.DockCol = 0;
+            bar3.DockRow = 0;
+            bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar3.Text = "Custom 2";
+            // 
+            // bar4
+            // 
+            bar4.BarName = "Custom 3";
+            bar4.DockCol = 0;
+            bar4.DockRow = 1;
+            bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar4.Text = "Custom 3";
+            // 
+            // ucPopupMenu
+            // 
+            ucPopupMenu.Name = "ucPopupMenu";
+            // 
+            // simpleButton1
+            // 
+            simpleButton1.Location = new Point(217, 5);
+            simpleButton1.Name = "simpleButton1";
+            simpleButton1.Size = new Size(167, 29);
+            simpleButton1.TabIndex = 3;
+            simpleButton1.Text = "Seçilen Uçağın Bakım Kayıtları";
+            // 
             // UcAirlineList
             // 
             AutoScaleDimensions = new SizeF(6F, 13F);
@@ -171,6 +232,7 @@
             ((System.ComponentModel.ISupportInitialize)gridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)panelControl1).EndInit();
             panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ucPopupMenu).EndInit();
             ResumeLayout(false);
         }
 
@@ -187,5 +249,12 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraEditors.SimpleButton ucakEditBtn;
+        private DevExpress.XtraBars.BarButtonItem umKytlarPopBtn;
+        private DevExpress.XtraBars.Bar bar1;
+        private DevExpress.XtraBars.Bar bar2;
+        private DevExpress.XtraBars.Bar bar3;
+        private DevExpress.XtraBars.Bar bar4;
+        private DevExpress.XtraBars.PopupMenu ucPopupMenu;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
